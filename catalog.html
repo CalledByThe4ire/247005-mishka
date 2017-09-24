@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a href="index.html" class="page-header__logo">
+          <img class="page-header__logo-image" src="#" width="86" height="35" alt="Магазин Мишка">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Open menu</button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="order-form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__caption">Каталог товаров</h1>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <article class="catalog__item catalog-item">
+            <picture>
+              <img href="#" class="catalog-item__item-image" alt="Зайчик-попрыгайчик">
+            </picture>
+            <p class="catalog-item__item-name">Зайчик-попрыгайчик</p>
+            <p class="catalog-item__item-details">Рост 30 см, вес 200 г</p>
+            <p class="catalog-item__item-price">1 200 руб.</p>
+          </article>
+          <article class="catalog__item catalog-item">
+            <picture>
+              <img href="#" class="catalog-item__item-image" alt="Корзинка для белья">
+            </picture>
+            <p class="catalog-item__item-name">Корзинка для белья</p>
+            <p class="catalog-item__item-details">Диаметр 15 см, высота 10 см</p>
+            <p class="catalog-item__item-price">690 руб.</p>
+          </article>
+          <article class="catalog__item catalog-item">
+            <picture>
+              <img href="#" class="catalog-item__item-image" alt="Большая корзинка для игрушек">
+            </picture>
+            <p class="catalog-item__item-name">Большая корзинка для игрушек</p>
+            <p class="catalog-item__item-details">Диаметр 30см, высота 30 см</p>
+            <p class="catalog-item__item-price">1 500 руб.</p>
+          </article>
+        </div>
+      </section>
+      <section class="production-process">
+        <div class="production-process__wrapper">
+          <figure>
+            <figurecaption class="product-process__title">Процесс прозводства</figurecaption>
+            <picture>
+              <img src="#" class="product-process__img"/>
+              <button class="product-process__play-btn">Play</button>
+            </picture>
+            <p class="product-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="product-process__order-btn" type="button">Сделать заказ</button>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--instagram">Мы в инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook">Мы в фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter">Мы в твитере</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__logo">Разработано <a class="copyright__logo-image" href="#">HTML Academy</a></p>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-dialog">
+      <div class="modal-dialog__wrapper">
+        <h2 class="modal-dialog__caption">Добавить в корзину</h2>
+        <span class="modal-dialog__size-choice">Выберите размер:</span>
+        <div class="modal-dialog__size-list size-list">
+          <button class="size-list__item" type="button">S</button>
+          <button class="size-list__item" type="button">M</button>
+          <button class="size-list__item" type="button">L</button>
+        </div>
+        <button class="modal-dialog__add-btn">Добавить</button>
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
+    <script src="js/script.js" async></script>
+  </body>
+</html>
