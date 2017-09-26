@@ -22,4 +22,20 @@ window.initMap = function() {
 }
 
 
+// slider
+var sliderArray = new Array(document.querySelector("#slide_1"),document.querySelector("#slide_2"),document.querySelector("#slide_3"));
+sliderArray[1].style.display="none";
+sliderArray[2].style.display="none";
+var currentSlide = 1;
+function nextSlide() {
+  currentSlide++;
+  if(currentSlide === sliderArray.length)
+  currentSlide = 1;
+      sliderArray[currentSlide].style.display="block";
+      sliderArray[currentSlide--].style.display="none";
+};
+
+document.querySelector(".reviews__paginator-next").onclick = nextSlide;
+
+
 
