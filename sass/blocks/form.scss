@@ -1,0 +1,19 @@
+.form__part-title {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $beaty-color;
+}
+
+.form__part-radio-label {
+  @include labels;
+}
+
+.form__part-checkbox-label {
+  @include labels;
+}
+
+.form__part-text-label {
+  @include labels;
+}

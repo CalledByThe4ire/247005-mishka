@@ -1,0 +1,19 @@
+.products-navigator {
+  padding: 0 0 0 35px;
+  margin-bottom: 30px
+}
+
+.products-navigator__button {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  &:first-child {
+    background-color: $beaty-color;
+  }
+  &:nth-child(2) {
+    background-color: #56c3b2;
+  }
+}
