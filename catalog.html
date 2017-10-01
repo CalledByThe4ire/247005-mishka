@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="fonts/opensans.woff" rel="stylesheet">
@@ -11,33 +12,44 @@
   </head>
   <body class="main-block">
     <header class="page-header">
-      <div class="main-block__wrapper">
+      <div class="main-block__wrapper page-header__content">
         <a href="index.html" class="page-header__logo">
-          <img class="page-header__logo-image" src="#" width="86" height="35" alt="Магазин Мишка">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="order-form.html">Вязание на&nbsp;заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list--service-nav site-list">
-            <li class="site-list__item">
-              <a class="site-list__item-link site-list__item--search-icon" href="#">Поиск по&nbsp;сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link site-list__item--basket-icon" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+          <div class="main-nav__dropdown">
+            <ul class="main-nav__list--site-nav site-list">
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="order-form.html">Вязание на&nbsp;заказ</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="order-form.html">Новые поступления</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="order-form.html">Распродажа</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list--service-nav site-list">
+              <li class="site-list__item">
+                <a class="site-list__item-link site-list__item--search-icon" href="#">Поиск по&nbsp;сайту</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link site-list__item--basket-icon" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
         </nav>
+        <span class="main-block__promo">Бесплатная доставка по России</span>
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__caption page-main__caption--bgc">Каталог товаров</h1>
+      <h1 class="page-main__caption page-main__caption--bgc">
+        <span class="main-block__wrapper">Каталог товаров</span>
+      </h1>
       <section class="catalog">
         <div class="main-block__wrapper">
           <article class="catalog__item catalog-item">
@@ -98,17 +110,20 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="main-block__wrapper">
+      <div class="main-block__wrapper page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" alt="Мишка">
+        </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме"></a>
+              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме">d</a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке"></a>
+              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке">d</a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--twitter" aria-label="Мы в тритере"></a>
+              <a href="#" class="social__link social__link--twitter" aria-label="Мы в тритере">d</a>
             </li>
           </ul>
         </div>
@@ -119,7 +134,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="display: none;"> <!-- временно -->
       <h2 class="modal-dialog__caption">Добавить в&nbsp;корзину</h2>
       <span class="modal-dialog__size-choice">Выберите размер:</span>
       <div class="modal-dialog__size-list size-list">

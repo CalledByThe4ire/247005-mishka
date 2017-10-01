@@ -1,0 +1,25 @@
+.copyright__logo {
+  margin: auto 0;
+  margin-left: 35px;
+  position: relative;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.copyright__logo-image {
+  background: url(../img/logo-htmlacademy.svg) no-repeat #fafafa 50% 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: -55px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__logo {
+    margin: 0 55px 0 0;
+  }
+}

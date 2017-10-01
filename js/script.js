@@ -22,6 +22,18 @@ window.initMap = function() {
 }
 
 
+// mobile menu
+var mainNav = document.querySelector('.main-nav');
+var toggleBtn = mainNav.querySelector('.main-nav__toggle')
+function toggleMenu() {
+  mainNav.querySelector('.main-nav__dropdown').classList.toggle('main-nav__dropdown-show');
+  toggleBtn.classList.toggle('main-nav__toggle--open');
+
+}
+
+toggleBtn.onclick = toggleMenu;
+
+
 // slider with add/remove style
 
 var slider = document.querySelector('.slider');
