@@ -38,6 +38,10 @@
     top: 115px;
     right: 50px;
   }
+  .main-block__caption {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -48,5 +52,10 @@
   }
   .main-block__promo {
     right: 100px;
+  }
+
+  .main-block__caption {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
