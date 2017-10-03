@@ -23,3 +23,15 @@
   font-size: 17px;
   line-height: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .reviews__make-review {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__caption {
+    margin-left: 175px;
+  }
+}

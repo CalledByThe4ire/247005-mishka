@@ -1,0 +1,26 @@
+@media (min-width: $tablet-width) {
+  .slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .slider__slide-list {
+    order: 2;
+  }
+
+  .slider__toggles {
+    order: 3;
+    display: flex;
+    justify-content: flex-end;
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggles {
+    width: 1050px;
+  }
+  .slider__slide-list {
+    margin-left: 175px;
+  }
+}

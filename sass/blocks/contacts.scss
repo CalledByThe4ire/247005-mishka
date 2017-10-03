@@ -12,8 +12,66 @@
   margin: 0 auto;
 }
 
+.contacts__desktop-map {
+  display: none;
+}
+
 .contacts__contact-btn {
   width: 260px;
   margin: 0 auto;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__map {
+    width: 100vw;
+  }
+  .contacts__caption {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__details {
+    display: flex;
+  }
+
+  .contacts__desktop-map {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__desktop-wrapper {
+    width: 1050px;
+    padding: 0 100px 0 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contacts__wrapper {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 175px;
+    margin-top: 85px;
+  }
+  .contacts__caption {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .contacts__details {
+    flex-wrap: wrap;
+    width: 200px;
+  }
+  .contacts__map {
+    width: 525px;
+    height: 455px;
+    margin-right: 0;
+  }
+  .contacts__contact-btn {
+    margin-left: 175px;
+    position: relative;
+    bottom: 50px;
+  }
 }
