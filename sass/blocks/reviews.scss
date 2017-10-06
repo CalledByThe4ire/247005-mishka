@@ -1,5 +1,6 @@
 .reviews {
   margin-bottom: 35px;
+  padding: 0;
 }
 
 .reviews__item {
@@ -22,4 +23,16 @@
 .reviews__author-instatag {
   font-size: 17px;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__make-review {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__caption {
+    margin-left: 175px;
+  }
 }

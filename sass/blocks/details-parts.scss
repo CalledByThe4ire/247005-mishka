@@ -1,0 +1,10 @@
+.details-parts__content {
+  margin: 0;
+}
+
+
+@media (min-width: $tablet-width) {
+  .details-parts__item {
+    width: 334px;
+  }
+}

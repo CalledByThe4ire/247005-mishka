@@ -12,44 +12,61 @@
   </head>
   <body class="main-block">
     <header class="page-header">
-      <div class="main-block__wrapper">
+      <div class="main-block__wrapper page-header__content">
         <a href="index.html" class="page-header__logo">
-          <img class="page-header__logo-image" src="#" width="86" height="35" alt="Магазин Мишка">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <ul class="main-nav__list--site-nav site-list">
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link" href="order-form.html">Вязание на&nbsp;заказ</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list--service-nav site-list">
-            <li class="site-list__item">
-              <a class="site-list__item-link site-list__item--search-icon" href="#">Поиск по&nbsp;сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__item-link site-list__item--basket-icon" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
+          <div class="main-nav__dropdown">
+            <ul class="main-nav__list--site-nav site-list">
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="order-form.html">Вязание на&nbsp;заказ</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="order-form.html">Новые поступления</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link" href="order-form.html">Распродажа</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list--service-nav site-list">
+              <li class="site-list__item">
+                <a class="site-list__item-link site-list__item--search-icon" href="#">Поиск по&nbsp;сайту</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-link site-list__item--basket-icon" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
         </nav>
+        <span class="main-block__promo">Бесплатная доставка по России</span>
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__caption page-main__caption--bg">Милые штуки ручной работы для дома</h1>
+      <h1 class="page-main__caption page-main__caption--bg">
+        <span class="main-block__wrapper">Милые штуки ручной<br>работы для дома</span>
+      </h1>
       <section class="products-navigator">
-        <a class="products-navigator__button products-navigator__button--int-icon" href="#" >Предметы интерьера</a>
-        <a class="products-navigator__button products-navigator__button--toy-icon" href="#" >Детские игрушки</a>
+        <div class="products-navigator__wrapper">
+          <a class="products-navigator__button products-navigator__button--int-icon" href="#">
+            <span class="products-navigator__button-title">Предметы<br>интерьера</span>
+          </a>
+          <a class="products-navigator__button products-navigator__button--toy-icon" href="#">
+            <span class="products-navigator__button-title">Детские<br>игрушки</span>
+          </a>
+        </div>
       </section>
       <section class="week-product wave-line">
-        <div class="main-block__wrapper">
-          <h2 class="main-block__caption">Вязанные корзинки</h2>
+        <div class="main-block__wrapper week-product__wrapper">
+          <h2 class="main-block__caption week-product__caption">Вязанные корзинки</h2>
           <b class="week-product__promo-name">Товар недели</b>
-          <p class="week-product__product-description">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести
-          расцветках, и&nbsp;трех размерах.</p>
           <dl class="week-product__characteristics characteristics-list">
+            <p class="week-product__product-description">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести
+            расцветках, и&nbsp;трех размерах.</p>
             <div class="characteristics-list__item">
               <dt class="characteristics-list__item-param characteristics-list__item-param--type">Цвет:</dt>
               <dd class="characteristics-list__item-param">&quot;Тиффани&quot;/cерый</dd>
@@ -65,30 +82,30 @@
           </dl>
           <figure class="week-product__image-wrapper">
             <picture>
-              <img src="#" alt="Вязаные корзинки">
+              <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
             </picture>
-            <figcaption class="week-product__price">Цена: 990&nbsp;руб.</figcaption>
           </figure>
+          <span class="week-product__price">Цена: 990&nbsp;руб.</span>
           <a class="week-product__buy-btn button" href="#">Заказать</a>
         </div>
       </section>
       <section class="about-us">
         <div class="main-block__wrapper">
-          <h2 class="main-block__caption">Коротко о&nbsp;нас:</h2>
+          <h2 class="main-block__caption about-us__caption">Коротко о&nbsp;нас:</h2>
           <ul class="about-us__list benefits-list">
             <li class="benefits-list__item benefits-list__item--icon-eco">Экологически чистые материалы</li>
             <li class="benefits-list__item benefits-list__item--icon-price">Скандинавский стиль по&nbsp;российской цене</li>
             <li class="benefits-list__item benefits-list__item--icon-like">Увеличевает лайки на&nbsp;фотографиях</li>
-            <li class="benefits-list__item benefits-list__item--icon-hand">Связано вручную с&nbsp;любовью
+            <li class="benefits-list__item benefits-list__item--icon-hand">Связано вручную с<br>любовью
             и&nbsp;умилением</li>
             <li class="benefits-list__item benefits-list__item--icon-sup">Поддержка отечественного производителя</li>
-            <li class="benefits-list__item benefits-list__item--icon-pack">Поставляется в&nbsp;подарочной упаковке</li>
+            <li class="benefits-list__item benefits-list__item--icon-pack">Поставляется в<br>подарочной упаковке</li>
           </ul>
         </div>
       </section>
       <section class="reviews wave-line">
         <div class="main-block__wrapper slider">
-          <h2 class="main-block__caption">Отзывы</h2>
+          <h2 class="main-block__caption reviews__caption">Отзывы</h2>
           <div class="slider__slide-list">
             <blockquote class="reviews__item slider__item">
               <p class="reviews__content">Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали
@@ -123,37 +140,42 @@
         </div>
       </section>
       <section class="contacts">
-        <div cass="main-block__wrapper">
-          <h2 class="main-block__caption contacts__caption">Контакты</h2>
-          <dl class="contacts__details details-parts">
-            <div class="details-parts__item">
-              <dt class="details-parts__type">e-mail:</dt>
-              <dd class="details-parts__content">
-                <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </dd>
-            </div>
-            <div class="details-parts__item">
-              <dt class="details-parts__type">адрес:</dt>
-              <dd class="details-parts__content">г.Санкт-Петербург, ул.Большая Конюшенная, д. 19/8, офис 101</dd>
-            </div>
-          </dl>
+        <div class="contacts__desktop-wrapper">
+          <div class="main-block__wrapper contacts__wrapper">
+            <h2 class="main-block__caption contacts__caption">Контакты</h2>
+            <dl class="contacts__details details-parts">
+              <div class="details-parts__item">
+                <dt class="details-parts__type">e-mail:</dt>
+                <dd class="details-parts__content">
+                  <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                </dd>
+              </div>
+              <div class="details-parts__item">
+                <dt class="details-parts__type">адрес:</dt>
+                <dd class="details-parts__content">г.Санкт-Петербург, ул.Большая Конюшенная, д. 19/8, офис 101</dd>
+              </div>
+            </dl>
+          </div>
+          <div style="height: 455px;" class="contacts__map"></div>
+          <a class="contacts__contact-btn button" href="#">Напишите нам</a>
         </div>
-        <div style="height: 455px;" class="contacts__map"></div> <!-- временные инлайн стили -->
-        <a class="contacts__contact-btn button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="main-block__wrapper">
+      <div class="main-block__wrapper page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" alt="Мишка">
+        </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме"></a>
+              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме">d</a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке"></a>
+              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке">d</a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--twitter" arial-label="Мы в твитере"></a>
+              <a href="#" class="social__link social__link--twitter" arial-label="Мы в твитере">d</a>
             </li>
           </ul>
         </div>
@@ -164,7 +186,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-dialog">
+    <div class="modal-dialog" style="display: none;">
       <h2 class="modal-dialog__caption">Добавить в&nbsp;корзину</h2>
       <span class="modal-dialog__size-choice">Выберите размер:</span>
       <div class="modal-dialog__size-list size-list">

@@ -1,9 +1,11 @@
 'use strict';
+
+
 window.initMap = function() {
   var myLatLng = {lat: 59.938800, lng: 30.3229900};
 
         // Карта
-  var map = new google.maps.Map(document.querySelector('.contacts__map'), {
+  var map = new google.maps.Map(document.querySelector('.contacts__map') , {
     center: {lat: 59.939400, lng: 30.3229900},
     scrollwheel: true,
     zoom: 16
@@ -20,6 +22,16 @@ window.initMap = function() {
     title: 'MishkaShop'
   });
 }
+
+
+// mobile menu
+var mainNav = document.querySelector('.main-nav');
+var toggleBtn = mainNav.querySelector('.main-nav__toggle')
+function toggleMenu() {
+  mainNav.querySelector('.main-nav__dropdown').classList.toggle('main-nav__dropdown-show');
+  toggleBtn.classList.toggle('main-nav__toggle--open');
+}
+toggleBtn.onclick = toggleMenu;
 
 
 // slider with add/remove style
@@ -55,3 +67,55 @@ slider.querySelector('.slider__toggle--prev').onclick = function() {slideToggle(
 
 // slider.querySelector('.slider__toggle--next').onclick = function() {slideToggle(1)};
 // slider.querySelector('.slider__toggle--prev').onclick = function() {slideToggle(-1)};
+
+
+
+//карта с двойным кодом
+
+// var map = document.querySelector('.contacts__map');
+// var desktopMap = document.querySelector('.contacts__desktop-map');
+// if(document.documentElement.clientWidth <= 1250) {
+// window.initMap = function() {
+//   var myLatLng = {lat: 59.938800, lng: 30.3229900};
+
+//         // Карта
+//   map = new google.maps.Map(document.querySelector('.contacts__map'), {
+//     center: {lat: 59.939400, lng: 30.3229900},
+//     scrollwheel: true,
+//     zoom: 16
+//   });
+
+//         // Маркер
+//   var image = 'img/icon-map-pin.svg';
+//   var marker = new google.maps.Marker({
+//     map: map,
+//     position: myLatLng,
+//     icon: image,
+//     draggable: true,
+//     animation: google.maps.Animation.DROP,
+//     title: 'MishkaShop'
+//   });
+// }
+// } else {
+// window.initMap = function() {
+//   var myLatLng = {lat: 59.938800, lng: 30.3229900};
+
+//         // Карта
+//   desktopMap = new google.maps.Map(document.querySelector('.contacts__desktop-map'), {
+//     center: {lat: 59.939400, lng: 30.3229900},
+//     scrollwheel: true,
+//     zoom: 16
+//   });
+
+//         // Маркер
+//   var image = 'img/icon-map-pin.svg';
+//   var marker = new google.maps.Marker({
+//     map: desktopMap,
+//     position: myLatLng,
+//     icon: image,
+//     draggable: true,
+//     animation: google.maps.Animation.DROP,
+//     title: 'MishkaShop'
+//   });
+// }
+//   }
