@@ -1,30 +1,9 @@
 .about-us {
   margin-bottom: 60px;
-}
-
-.about-us__list {
-  font-size: 17px;
-  font-weight: bold;
-  color: #000000;
-  line-height: 20px;
-  list-style: none;
   padding: 0;
 }
 
-@media(min-width: $tablet-width) {
-  .about-us__list {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    line-height: 22px;
-    margin-top: 110px;
-  }
-}
-
 @media(min-width: $desktop-width) {
-  .about-us__list {
-    margin-left: 175px;
-  }
   .about-us__caption {
     margin-left: 175px;
   }

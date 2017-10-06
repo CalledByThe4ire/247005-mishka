@@ -5,11 +5,13 @@
 }
 @media (min-width: $desktop-width) {
   .site-list:first-child .site-list__item {
-    margin-right: 65px;
+    // margin-right: 65px;
+    width: 140px;
     &:nth-child(3), &:nth-child(4) {
       display: block;
     }
-    &:nth-child(1), &:nth-child(2) {}
+    // &:nth-child(2) {
+    // }
   }
   .site-list:first-child .site-list__item-link {
     display: block;

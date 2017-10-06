@@ -1,3 +1,6 @@
+.contacts {
+  padding: 0;
+}
 .contacts__caption {
   font-size: 18px;
 }
@@ -12,10 +15,6 @@
   margin: 0 auto;
 }
 
-.contacts__desktop-map {
-  display: none;
-}
-
 .contacts__contact-btn {
   width: 260px;
   margin: 0 auto;
@@ -24,7 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__map {
-    width: 100vw;
+    width: 768px;
   }
   .contacts__caption {
     font-size: 43px;
@@ -35,9 +34,6 @@
     display: flex;
   }
 
-  .contacts__desktop-map {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {

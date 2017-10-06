@@ -1,5 +1,6 @@
 .week-product {
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .week-product__promo-name {
@@ -46,6 +47,7 @@
     background-color: $beaty-color;
     height: 405px;
   }
+
   .week-product__price {
     position: absolute;
     bottom: 100px;

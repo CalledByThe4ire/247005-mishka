@@ -79,9 +79,10 @@
   }
   .main-nav__list--site-nav {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 0;
-    max-width: 380px;
+    max-width: 350px;
   }
 }
 
