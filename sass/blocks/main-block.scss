@@ -27,6 +27,22 @@
   display: none;
 }
 
+.main-block__button {
+  width: 260px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  display: block;
+  color: #444444;
+  text-decoration: none;
+  height: 50px;
+  padding: 15px 0 15px 0;
+  border: 2px solid #444444;
+  text-transform: uppercase;
+}
+
 @media (min-width: $tablet-width) {
   .main-block__wrapper {
     width: 668px;
@@ -36,7 +52,7 @@
   .main-block__promo {
     display: block;
     position: absolute;
-    top: 115px;
+    top: 105px;
     right: 50px;
   }
   .main-block__caption {
@@ -48,11 +64,11 @@
 @media (min-width: $desktop-width) {
   .main-block__wrapper {
     width: 1050px;
-    padding: 0 100px 0 100px;
+    padding: 0 50px 0 50px;
     margin: 0 auto;
   }
   .main-block__promo {
-    right: 100px;
+    right: 50px;
   }
 
   .main-block__caption {

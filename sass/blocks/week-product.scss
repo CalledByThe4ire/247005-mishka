@@ -1,6 +1,7 @@
 .week-product {
   margin-bottom: 30px;
   padding: 0;
+  padding-top: 30px;
 }
 
 .week-product__promo-name {
@@ -14,6 +15,39 @@
 .week-product__image-wrapper {
     margin: 0;
     padding: 0;
+    margin-top: 30px;
+    min-height: 315px;
+}
+
+.week-product__product-description {
+  margin: 0;
+  width: 249px;
+  margin-bottom: 15px;
+}
+
+.week-product__characteristics {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.week-product__buy {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.week-product__price {
+  display: block;
+  width: 260px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.week-product__buy-btn {
+  margin-top: 25px;
 }
 
 @media(min-width: $tablet-width) {
@@ -28,16 +62,31 @@
     margin-bottom: 55px;
     width: 80px;
     text-align: center;
-    margin-right: 25px;
+    margin-right: 0px;
   }
   .week-product__characteristics {
-    width: 334px;
+    width: 290px;
     margin: 0;
-    height: 250px
+    height: 250px;
+    margin-bottom: 0px;
+  }
+  .week-product__price {
+    width: 290px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .week-product__buy {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
   }
 
   .week-product__product-description {
     margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+    width: 280px;
+    margin-bottom: 40px;
   }
 
   .week-product__image-wrapper {
@@ -48,33 +97,23 @@
     height: 405px;
   }
 
-  .week-product__price {
-    position: absolute;
-    bottom: 100px;
-    left: 150px;
-  }
 
   .week-product__buy-btn {
     width: 290px;
     border: 2px solid black;
     margin-left: 0;
     text-align: center;
-    position: relative;
-    top: -30px;
+    margin-top: 30px;
   }
 }
 
 @media(min-width: $desktop-width) {
   .week-product__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
     padding-top: 55px;
   }
 
   .week-product__characteristics {
-    margin-left: 15px;
+    margin-left: 35px;
     margin-top: 165px;
   }
 
@@ -102,12 +141,8 @@
     margin-left: 45px;
     margin-top: 65px;
   }
-  .week-product__buy-btn {
+  .week-product__buy {
     margin-left: 175px;
   }
-    .week-product__price {
-    position: absolute;
-    bottom: 100px;
-    left: 350px;
-  }
+
 }

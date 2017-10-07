@@ -27,6 +27,7 @@ window.initMap = function() {
 // mobile menu
 var mainNav = document.querySelector('.main-nav');
 var toggleBtn = mainNav.querySelector('.main-nav__toggle')
+mainNav.classList.remove('main-nav--nojs');
 function toggleMenu() {
   mainNav.querySelector('.main-nav__dropdown').classList.toggle('main-nav__dropdown-show');
   toggleBtn.classList.toggle('main-nav__toggle--open');

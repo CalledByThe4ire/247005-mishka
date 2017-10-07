@@ -11,27 +11,32 @@
 
 .contacts__map {
   background: url(../img/map-mobile@1x.jpg) no-repeat #f5ead8 0% 5%;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .contacts__contact-btn {
   width: 260px;
-  margin: 0 auto;
   display: block;
+  margin: 40px auto;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__map {
-    width: 768px;
+    width: 100%;
   }
   .contacts__caption {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 60px;
   }
 
   .contacts__details {
     display: flex;
+  }
+  .contacts__contact-btn {
+    margin: 55px auto;
+    width: 230px;
   }
 
 }
@@ -39,7 +44,7 @@
 @media (min-width: $desktop-width) {
   .contacts__desktop-wrapper {
     width: 1050px;
-    padding: 0 100px 0 100px;
+    padding: 0 50px 0 50px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
