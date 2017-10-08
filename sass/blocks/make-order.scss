@@ -25,5 +25,28 @@
   .make-order__description {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .make-order-content__wrapper {
+    margin: 0 auto;
+    width: 668px;
+    padding: 0 50px 0 50px;
+  }
+  .make-order__wrapper {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  .make-order-content__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .make-order-content__wrapper {
+    margin: 0 auto;
+    width: 700px;
+    padding: 0;
   }
 }

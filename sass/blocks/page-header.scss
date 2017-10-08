@@ -25,6 +25,10 @@
   .page-header {
     height: 90px;
   }
+  .page-header__logo {
+    position: relative;
+    z-index: 1;
+  }
 
   .page-header__content {
     width: 668px;

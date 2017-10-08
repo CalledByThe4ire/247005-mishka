@@ -27,17 +27,17 @@
                 <a class="site-list__item-link" href="order-form.html">Вязание на&nbsp;заказ</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__item-link" href="order-form.html">Новые поступления</a>
+                <a class="site-list__item-link site-list__item-link--new" href="#">Новые поступления</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__item-link" href="order-form.html">Распродажа</a>
+                <a class="site-list__item-link site-list__item-link--sale" href="#">Распродажа</a>
               </li>
             </ul>
             <ul class="main-nav__list--service-nav site-list">
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--search">
                 <a class="site-list__item-link site-list__item--search-icon" href="#">Поиск по&nbsp;сайту</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--basket">
                 <a class="site-list__item-link site-list__item--basket-icon" href="#">Корзина: пока пуста</a>
               </li>
             </ul>
@@ -53,47 +53,47 @@
       <section class="catalog">
         <div class="main-block__wrapper catalog__wrapper">
           <article class="catalog__item catalog-item">
-            <a href="#">
+            <a class="catalog-image__link" href="#">
               <picture>
                 <img src="img/photo-hare-mobile@1x.jpg" class="catalog-item__image" alt="Зайчик-попрыгайчик">
               </picture>
             </a>
             <div class="catalog-item__description">
-              <a href="#"><h2 class="catalog-item__name">Зайчик-попрыгайчик</h2></a>
+              <a class="catalog-item_link" href="#"><h2 class="catalog-item__name">Зайчик-попрыгайчик</h2></a>
               <p class="catalog-item__details">Рост 30&nbsp;см, вес 200&nbsp;г</p>
               <div class="catalog-item__wrapper">
                 <p class="catalog-item__price">1&nbsp;200&nbsp;руб.</p>
-                <a class="catalog-item__buy" href="#" aria-label="Купить"></a>
+                <a class="catalog-item__buy main-block__modal-btn" href="#" aria-label="Купить"></a>
               </div>
             </div>
           </article>
           <article class="catalog__item catalog-item">
-            <a href="#">
+            <a class="catalog-image__link" href="#">
               <picture>
                 <img src="img/photo-bowl-mobile@1x.jpg" class="catalog-item__image" alt="Корзинка для белья">
               </picture>
             </a>
             <div class="catalog-item__description">
-              <a href="#"><h2 class="catalog-item__name">Корзинка для белья</h2></a>
+              <a class="catalog-item_link" href="#"><h2 class="catalog-item__name">Корзинка для белья</h2></a>
               <p class="catalog-item__details">Диаметр 15&nbsp;см, высота 10&nbsp;см</p>
               <div class="catalog-item__wrapper">
                 <p class="catalog-item__price">690&nbsp;руб.</p>
-                <a class="catalog-item__buy" href="#" aria-label="Купить"></a>
+                <a class="catalog-item__buy main-block__modal-btn" href="#" aria-label="Купить"></a>
               </div>
             </div>
           </article>
           <article class="catalog__item catalog-item">
-            <a href="#">
+            <a class="catalog-image__link" href="#">
               <picture>
                 <img src="img/photo-toys-mobile@1x.jpg" class="catalog-item__image" alt="Большая корзинка для игрушек">
               </picture>
             </a>
             <div class="catalog-item__description">
-              <a href="#"><h2 class="catalog-item__name">Большая корзинка для игрушек</h2></a>
-              <p class="catalog-item__details">Диаметр 30см, высота 30&nbsp;см</p>
+              <a class="catalog-item_link" href="#"><h2 class="catalog-item__name">Большая корзинка<br>для игрушек</h2></a>
+              <p class="catalog-item__details">Диаметр 30&nbsp;см, высота 30&nbsp;см</p>
               <div class="catalog-item__wrapper">
                 <p class="catalog-item__price">1&nbsp;500&nbsp;руб.</p>
-                <a class="catalog-item__buy" href="#" aria-label="Купить"></a>
+                <a class="main-block__modal-btn catalog-item__buy" href="#" aria-label="Купить"></a>
               </div>
             </div>
           </article>
@@ -107,10 +107,10 @@
             <picture>
               <img src="img/video-mobile@1x.jpg" class="production-process__img"/>
             </picture>
-            <button class="production-process__play-btn" type="button" aria-label="Воспроизвести видео"></button>
+            <button class="production-process__play-btn button" type="button" aria-label="Воспроизвести видео"></button>
             <p class="production-process__description">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли
-            для вас подробное видео о&nbsp;том, как появляются наши товарый.</p>
-            <button class="production-process__order-btn button" type="button">Сделать заказ</button>
+            для вас подробное видео о&nbsp;том, как появляются наши товары.</p>
+            <button class="production-process__order-btn main-block__button" type="button">Сделать заказ</button>
           </figure>
         </div>
       </section>
@@ -123,13 +123,13 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме">d</a>
+              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме">*</a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке">d</a>
+              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке">*</a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--twitter" aria-label="Мы в тритере">d</a>
+              <a href="#" class="social__link social__link--twitter" aria-label="Мы в тритере">*</a>
             </li>
           </ul>
         </div>
@@ -140,15 +140,17 @@
         </div>
       </div>
     </footer>
-    <div class="modal-dialog" style="display: none;"> <!-- временно -->
-      <h2 class="modal-dialog__caption">Добавить в&nbsp;корзину</h2>
-      <span class="modal-dialog__size-choice">Выберите размер:</span>
-      <div class="modal-dialog__size-list size-list">
-        <button class="size-list__item" type="button">S</button>
-        <button class="size-list__item" type="button">M</button>
-        <button class="size-list__item" type="button">L</button>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <h2 class="modal-dialog__caption">Добавить в&nbsp;корзину</h2>
+        <span class="modal-dialog__size-choice">Выберите размер:</span>
+        <div class="modal-dialog__size-list size-list">
+          <button class="size-list__item" type="button">S</button>
+          <button class="size-list__item" type="button">M</button>
+          <button class="size-list__item" type="button">L</button>
+        </div>
+        <button class="modal-dialog__add-btn main-block__button" type="button">Добавить</button>
       </div>
-      <button class="modal-dialog__add-btn button" type="button">Добавить</button>
     </div>
     <div class="modal-overlay"></div>
     <script src="js/script.js" async defer></script>

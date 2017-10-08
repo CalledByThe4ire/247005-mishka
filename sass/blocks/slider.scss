@@ -32,13 +32,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .slider__toggles {
-    width: 175px;
-    background-color: $beaty-color;
-    margin-left: auto;
-    top: -20px;
-  }
   .slider__slide-list {
     margin-left: 175px;
+  }
+    .slider__toggles {
+    order: 3;
+    width: 175px;
+    margin-left: auto;
+    position: relative;
+    top: -85px;
   }
 }

@@ -13,6 +13,7 @@
   background: url(../img/map-mobile@1x.jpg) no-repeat #f5ead8 0% 5%;
   width: 100%;
   margin: 0 auto;
+  height: 460px;
 }
 
 .contacts__contact-btn {
@@ -63,7 +64,7 @@
   }
   .contacts__details {
     flex-wrap: wrap;
-    width: 200px;
+    width: 300px;
   }
   .contacts__map {
     width: 525px;
@@ -73,6 +74,7 @@
   .contacts__contact-btn {
     margin-left: 175px;
     position: relative;
-    bottom: 50px;
+    bottom: 105px;
+    margin-bottom: 0;
   }
 }

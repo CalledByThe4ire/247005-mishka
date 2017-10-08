@@ -72,7 +72,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    margin-bottom: 65px;
+    padding-bottom: 50px;
+  }
   .reviews__caption {
     margin-left: 175px;
+  }
+   .reviews__content {
+    margin-bottom: 45px;
+    width: 760px;
   }
 }

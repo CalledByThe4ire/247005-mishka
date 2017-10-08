@@ -27,17 +27,17 @@
                 <a class="site-list__item-link" href="order-form.html">Вязание на&nbsp;заказ</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__item-link" href="order-form.html">Новые поступления</a>
+                <a class="site-list__item-link site-list__item-link--new" href="#">Новые поступления</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__item-link" href="order-form.html">Распродажа</a>
+                <a class="site-list__item-link site-list__item-link--sale" href="#">Распродажа</a>
               </li>
             </ul>
             <ul class="main-nav__list--service-nav site-list">
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--search">
                 <a class="site-list__item-link site-list__item--search-icon" href="#">Поиск по&nbsp;сайту</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--basket">
                 <a class="site-list__item-link site-list__item--basket-icon" href="#">Корзина: пока пуста</a>
               </li>
             </ul>
@@ -58,17 +58,17 @@
           </div>
           <form class="make-order__form form" method="post" action="https://echo.htmlacademy.ru">
             <fieldset class="form__part">
-              <!-- <legend class="form__part-title">Тип</legend> -->
-              <div class="form__part-wrapper">
+              <div class="form__part-wrapper form__part-wrapper--radios">
                 <legend class="form__part-title">Тип</legend>
-                <input class="form__part-radio" type="radio" id="accessories" name="radio-input" value="access">
-                <label class="form__part-radio-label" for="accessories">Аксессуар для интерьера</label>
-                <input class="form__part-radio" type="radio" id="toy" name="radio-input" value="toys">
-                <label class="form__part-radio-label" for="toy">Детская игрушка</label>
+                <div class="form-part--radios">
+                  <input class="form__part-radio" type="radio" id="accessories" name="radio-input" value="access">
+                  <label class="form__part-radio-label" for="accessories">Аксессуар для интерьера</label>
+                  <input class="form__part-radio" type="radio" id="toy" name="radio-input" value="toys">
+                  <label class="form__part-radio-label" for="toy">Детская игрушка</label>
+                  </div>
               </div>
             </fieldset>
             <fieldset class="form__part form__part--bg">
-              <!-- <legend class="form__part-title">Цвет</legend> -->
               <div class="form__part-wrapper form__part-wrapper--checkboxes">
                 <legend class="form__part-title form__part-title--checkboxes">Цвет</legend>
                 <div class="form-part--checkboxes">
@@ -94,45 +94,34 @@
               </div>
             </fieldset>
             <fieldset class="form__part form__part--text">
-              <!-- <legend class="form__part-title">ФИО</legend> -->
-              <div class="form__part-wrapper">
+              <div class="form__part-wrapper form__part-wrapper--text-inputs">
                 <legend class="form__part-title">ФИО</legend>
-                <label class="form__part-text-label" for="name">Имя:
-                  <input class="form__part-text" type="text" id="name" placeholder="Введите ваше имя*" name="name-input">
-                </label>
-                <!-- <input class="form__part-text" type="text" id="name" placeholder="Введите ваше имя*" name="name-input"> -->
-                <label class="form__part-text-label" for="surname">Фамилия:
-                  <input class="form__part-text" type="text" id="surname" placeholder="Укажите фамилию*">
-                </label>
-                <!-- <input class="form__part-text" type="text" id="surname" placeholder="Введите ваше фамилию*"
-                name="surname-input"> -->
-                <label class="form__part-text-label" for="middle-name">Отчество:
-                  <input class="form__part-text" type="text" id="middle-name" placeholder="Отчество, если желаете*"
-                  name="patronym-input">
-                </label>
-                <!-- <input class="form__part-text" type="text" id="middle-name" placeholder="Введите ваше отчество*"
-                name="patronym-input"> -->
+                <div class="form-part__text-inputs">
+                  <label class="form__part-text-label" for="name">Имя:
+                    <input class="form__part-text" type="text" id="name" placeholder="Введите ваше имя*" name="name-input">
+                  </label>
+                  <label class="form__part-text-label" for="surname">Фамилия:
+                    <input class="form__part-text" type="text" id="surname" placeholder="Укажите фамилию*">
+                  </label>
+                  <label class="form__part-text-label" for="middle-name">Отчество:
+                    <input class="form__part-text" type="text" id="middle-name" placeholder="Отчество, если желаете*"
+                    name="patronym-input">
+                  </label>
+                </div>
               </div>
             </fieldset>
             <fieldset class="form__part form__part--bg">
-            <!--   <legend class="form__part-title" aria-label="Номер телефона">
-                <label for="phone-number">Тел</label>
-              </legend> -->
               <div class="form__part-wrapper form__part-wrapper--tel">
-                <legend class="form__part-title" aria-label="Номер телефона">
+                <legend class="form__part-title form__part-title--tel" aria-label="Номер телефона">
                   <label for="phone-number">Тел</label>
                 </legend>
-                <!-- <label class="form__part-tel-label" for="phone-number"></label> -->
                 <input class="form__part-tel" id="phone-number" type="tel" placeholder="+7 XXX XX XX*"
                 name="phone-input">
               </div>
             </fieldset>
             <fieldset class="form__part form__part--bg">
-              <!-- <legend class="form__part-title">
-                <label for="mail">E-mail</label>
-              </legend> -->
               <div class="form__part-wrapper form__part-wrapper--email">
-                <legend class="form__part-title">
+                <legend class="form__part-title form__part-title--email">
                   <label for="mail">E-mail</label>
                 </legend>
                 <input class="form__part-mail" type="email" id="mail" placeholder="Ваш Email*"
@@ -141,7 +130,7 @@
             </fieldset>
             <fieldset class="form__part">
               <div class="form__part-wrapper form__part-wrapper--textarea">
-                <legend class="form__part-title" aria-label="Дополнительно">
+                <legend class="form__part-title form__part-title--textarea" aria-label="Дополнительно">
                   <label for="comment">Доп</label>
                 </legend>
                 <textarea class="form__part-textarea" type="text" placeholder="Опишите все ваши пожелания к заказу"
@@ -151,7 +140,7 @@
           </form>
           <div class="make-order-content__wrapper">
             <p class="make-order__comment">*Поля обязательны для заполнения</p>
-            <button class="make-order__order-btn button" type="button">Отправить заказ</button>
+            <button class="make-order__order-btn main-block__button" type="button">Отправить заказ</button>
           </div>
         </div>
       </section>
@@ -164,13 +153,13 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме">d</a>
+              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме">*</a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке">d</a>
+              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке">*</a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--twitter" aria-label="Мы в твитере">d</a>
+              <a href="#" class="social__link social__link--twitter" aria-label="Мы в твитере">*</a>
             </li>
           </ul>
         </div>
