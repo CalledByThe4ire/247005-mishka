@@ -26,10 +26,10 @@
               <li class="site-list__item">
                 <a class="site-list__item-link" href="order-form.html">Вязание на&nbsp;заказ</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--hidden">
                 <a class="site-list__item-link site-list__item-link--new" href="#">Новые поступления</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--hidden">
                 <a class="site-list__item-link site-list__item-link--sale" href="#">Распродажа</a>
               </li>
             </ul>
@@ -137,11 +137,11 @@
                 name="comment-input" id="comment"></textarea>
               </div>
             </fieldset>
+            <div class="make-order-content__wrapper form__submit--wrapper">
+              <p class="make-order__comment form__comment">*Поля обязательны для заполнения</p>
+              <button class="form__button make-order__order-btn button" type="submit">Отправить заказ</button>
+            </div>
           </form>
-          <div class="make-order-content__wrapper">
-            <p class="make-order__comment">*Поля обязательны для заполнения</p>
-            <button class="make-order__order-btn main-block__button" type="button">Отправить заказ</button>
-          </div>
         </div>
       </section>
     </main>
@@ -164,9 +164,8 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__logo">Разработано
-            <a class="copyright__logo-image" href="#" aria-label="HTML Academy"></a>
-          </p>
+          <p class="copyright__logo">Разработано</p>
+          <a class="copyright__logo-image" href="#" aria-label="HTML Academy"></a>
         </div>
       </div>
     </footer>

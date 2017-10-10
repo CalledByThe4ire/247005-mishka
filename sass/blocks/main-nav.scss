@@ -56,7 +56,6 @@
   height: auto;
   transform: translateY(1px);
   transition: transform 1s linear;
-
 }
 
 
@@ -86,7 +85,6 @@
 
   .main-nav__list--service-nav {
     display: flex;
-    // margin: auto;
     margin-right: 0;
     width: 349px;
     justify-content: space-between;
@@ -108,8 +106,5 @@
     width: 380px;
     margin-left: 0;
     padding-top: 0;
-  }
-
-  .main-nav__list--service-nav {
   }
 }
