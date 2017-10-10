@@ -1,11 +1,13 @@
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'blocks/main-block.scss';
+@import 'blocks/button.scss';
 @import 'blocks/page-header.scss';
 @import 'blocks/site-list.scss';
 @import 'blocks/page-main.scss';
 @import 'blocks/products-navigator.scss';
 @import 'blocks/week-product.scss';
+@import 'blocks/characteristics-list.scss';
 @import 'blocks/about-us.scss';
 @import 'blocks/benefits-list.scss';
 @import 'blocks/reviews.scss';
@@ -20,5 +22,8 @@
 @import 'blocks/main-nav.scss';
 @import 'blocks/social.scss';
 @import 'blocks/copyright.scss';
+@import 'blocks/modal-dialog.scss';
+@import 'blocks/modal-overlay.scss';
+@import 'blocks/size-list.scss';
 
 

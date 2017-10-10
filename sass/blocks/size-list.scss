@@ -1,0 +1,28 @@
+.size-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.size-list__item {
+  width: 80px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 2px solid #ececec;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  &:focus {
+    border: 2px solid $beaty-color;
+    outline: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .size-list__item {
+    width: 110px;
+  }
+}

@@ -1,22 +1,85 @@
-.site-list:first-child .site-list__item {
-  &:nth-child(3), &:nth-child(4) {
+.site-list__item--hidden {
     display: none;
-  }
 }
-@media (min-width: $desktop-width) {
-  .site-list:first-child .site-list__item {
-    // margin-right: 65px;
-    width: 140px;
-    &:nth-child(3), &:nth-child(4) {
-      display: block;
-    }
-    // &:nth-child(2) {
-    // }
+
+.site-list .site-list__item-link {
+  display: block;
+  padding: 28px 0 28px 0;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 1px solid #ececec;
+}
+
+
+@media (min-width: $tablet-width) {
+  .site-list__item--search {
+    width: 83px;
+    display: flex;
+    border-left: 1px solid #ececec;
   }
+
+  .site-list__item--basket {
+    flex-grow: 1;
+    text-align: right;
+    display: flex;
+    border-left: 1px solid #ececec;
+  }
+  .site-list .site-list__item-link {
+    border: none;
+    padding: 0;
+  }
+
   .site-list:first-child .site-list__item-link {
-    display: block;
-    padding: 30px 0 30px 0;
+    font-size: 15px;
+  }
+  .site-list .site-list__item--search-icon {
+    font-size: 0;
+    outline: 1px solid blue;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+  }
+
+  .site-list .site-list__item--basket-icon{
+    margin: auto;
+    margin-right: 0;
+    width: 85%;
+    height: 30px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list:first-child .site-list__item {
+    display: flex;
+    height: 100%;
+    min-width: 160px;
+    &:first-child {
+      width: 185px;
+      border-right: 1px solid #ececec;
+    }
+  }
+  .site-list:first-child .site-list__item--hidden {
+    display: block;
+    margin-top: 20px;
+  }
+  .site-list:first-child .site-list__item-link {
+    font-size: 17px;
+    &:nth-child(1), &:nth-child(2) {
+      margin: auto;
+      margin-left: 0;
+      height: 30px;
+    }
+  }
+  .site-list:first-child .site-list__item-link--new, {
+    font-size: 15px;
+    text-align: left;
+  }
+  .site-list:first-child .site-list__item-link--sale {
+    font-size: 15px;
+    text-align: left;
+  }
+}
 

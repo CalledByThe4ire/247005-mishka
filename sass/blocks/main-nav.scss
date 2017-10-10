@@ -2,12 +2,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: auto;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 30px;
-  right: 0;
+  top: -47px;
+  right: 30px;
   display: block;
   background: url(../img/icon-menu-open.svg) no-repeat white 50% 15%;
   border: none;
@@ -31,19 +32,32 @@
   @include lists-styles;
 }
 
-.main-nav__dropdown {
-  display: none;
-  position: absolute;
-  top: 80px;
-  right: -30px;
-  width: 260px;
-  padding: 0 30px 0 30px;
+.main-nav__dropdown-show {
+  display: block;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .main-nav__dropdown {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(-450px);
+    // transition: transform 1s;
+  }
+  .main-nav--nojs .main-nav__dropdown {
+    display: block;
+    transform: translateY(1px)
+  }
 }
 
 .main-nav__dropdown-show {
   display: block;
   height: auto;
+  transform: translateY(1px);
+  transition: transform 1s linear;
 }
+
 
 @media (min-width: $tablet-width) {
   .main-nav {
@@ -55,35 +69,42 @@
   .main-nav__dropdown {
     display: flex;
     position: static;
-    justify-content: space-between;
     width: auto;
     height: auto;
     padding: 0;
   }
   .main-nav__list--site-nav {
-    padding-top: 115px;
+    width: 309px;
+    padding-top: 105px;
     background-color: inherit;
     display: flex;
+    justify-content: space-between;
+    margin-left: -86px;
+    margin-right: 0;
   }
 
   .main-nav__list--service-nav {
     display: flex;
-    margin: auto 0;
+    margin-right: 0;
+    width: 349px;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__dropdown {
-    display: flex;
-    flex-grow: 1;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    // height: 100%;
+    height: 100%;
   }
   .main-nav__list--site-nav {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     flex-wrap: wrap;
+    width: 380px;
+    margin-left: 0;
     padding-top: 0;
-    max-width: 350px;
   }
 }
-
-

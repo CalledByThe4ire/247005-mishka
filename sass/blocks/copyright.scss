@@ -1,11 +1,12 @@
 .copyright__logo {
   margin: auto 0;
-  margin-left: 35px;
-  position: relative;
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
   color: #000000;
+  margin-left: 35px;
+  margin-right: 25px;
+  padding: 0;
 }
 
 .copyright__logo-image {
@@ -13,13 +14,11 @@
   display: block;
   width: 30px;
   height: 30px;
-  position: absolute;
-  top: 0;
-  right: -55px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .copyright__logo {
-    margin: 0 55px 0 0;
+    margin: 0 25px 0 0;
   }
 }
