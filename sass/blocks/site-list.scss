@@ -66,6 +66,7 @@
   .site-list:first-child .site-list__item--hidden {
     display: block;
     margin-top: 20px;
+    z-index: 1;
   }
   .site-list:first-child .site-list__item-link {
     font-size: 17px;
