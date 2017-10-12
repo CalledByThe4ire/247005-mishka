@@ -71,7 +71,7 @@ var slider = document.querySelector('.slider');
 var slides = slider.querySelectorAll('blockquote');
 var currentSlide = 0;
 slides[1].style.display = "none";
-slides[2].style.display = "none";
+// slides[2].style.display = "none";
 function slideToggle(toggle) {
   slides[currentSlide].style.display = "none";
   currentSlide += toggle;

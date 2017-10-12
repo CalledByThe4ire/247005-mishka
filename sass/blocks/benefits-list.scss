@@ -11,11 +11,29 @@
 
 .benefits-list__item {
   margin-bottom: 85px;
+  padding-top: 55px;
   &:last-child {
     margin-bottom: 0;
   }
 }
-
+.benefits-list__item--icon-eco {
+  background: url(../img/icon-feature-flower.svg) no-repeat #ffffff 0% 0%;
+}
+.benefits-list__item--icon-price {
+  background: url(../img/icon-feature-money.svg) no-repeat #ffffff 0% 0%;
+}
+.benefits-list__item--icon-like {
+  background: url(../img/icon-feature-heart.svg) no-repeat #ffffff 0% 0%;
+}
+.benefits-list__item--icon-hand {
+  background: url(../img/icon-feature-ball.svg) no-repeat #ffffff 0% 0%;
+}
+.benefits-list__item--icon-sup {
+  background: url(../img/icon-feature-rocket.svg) no-repeat #ffffff 0% 0%;
+}
+.benefits-list__item--icon-pack {
+  background: url(../img/icon-feature-gift.svg) no-repeat #ffffff 0% 0%;
+}
 
 @media(min-width: $tablet-width) {
   .benefits-list {

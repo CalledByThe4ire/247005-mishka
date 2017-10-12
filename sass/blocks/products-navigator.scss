@@ -35,11 +35,19 @@
     margin: 0 auto;
     justify-content: space-between;
   }
+
   .products-navigator__button {
     width: 264px;
     padding: 35px 35px;
     font-size: 20px;
     line-height: 30px;
+    &:hover {
+      transform: translateY(-10px);
+      transition: .2s;
+    }
+    &:active .products-navigator__button-title {
+      opacity: .3;
+    }
   }
   .products-navigator__button-title {
     width: auto;

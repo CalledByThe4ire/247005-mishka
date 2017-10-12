@@ -41,6 +41,7 @@
     width: 30px;
     height: 30px;
     margin: auto;
+    background: url(../img/icon-search.svg) no-repeat #ffffff 50% 50%;
   }
 
   .site-list .site-list__item--basket-icon{
@@ -48,6 +49,7 @@
     margin-right: 0;
     width: 85%;
     height: 30px;
+    background: url(../img/icon-cart.svg) no-repeat #ffffff 0% 45%;
   }
 }
 
