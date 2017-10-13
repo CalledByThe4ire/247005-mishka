@@ -18,19 +18,22 @@
   &::after {
     height: 18px;
     background-size: auto 18px;
-    }
+    bottom: -20px;
+    background-position: 50% 50%;
   }
+}
   .wave-line--fill {
     position: relative;
     &::after {
       content: "";
       display: block;
       position: absolute;
-      bottom: -10px;
+      bottom: -2px;
       width: 100%;
-      height: 34px;
+      height: 25px;
+      background-size: auto 25px;
       background-image: url(../img/bg-zigzag-fill.svg);
-      background-position: center;
+      background-position: 10% 50%;
     }
   }
 }
@@ -41,12 +44,20 @@
       display: none;
     }
   }
+  .wave-line--fill {
+    &::after {
+      bottom: -7px;
+      width: 100%;
+      height: 35px;
+      background-size: auto 35px;
+    }
+  }
   .wave-line--desktop {
     &::after {
       content: "";
       display: block;
       position: absolute;
-      bottom: -50px;
+      bottom: -100px;
       width: 1050px;
       height: 25px;
       background-image: url(../img/bg-zigzag-line.svg);

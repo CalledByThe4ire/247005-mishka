@@ -20,6 +20,9 @@
     display: flex;
     border-left: 1px solid #ececec;
   }
+  .site-list .site-list__item {
+    z-index: 1;
+  }
 
   .site-list__item--basket {
     flex-grow: 1;
@@ -34,6 +37,7 @@
 
   .site-list:first-child .site-list__item-link {
     font-size: 15px;
+    padding-right: 5px;
   }
   .site-list .site-list__item--search-icon {
     font-size: 0;
@@ -65,7 +69,7 @@
   }
   .site-list:first-child .site-list__item--hidden {
     display: block;
-    margin-top: 20px;
+    margin-top: 18px;
     z-index: 1;
   }
   .site-list:first-child .site-list__item-link {

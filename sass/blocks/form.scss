@@ -1,6 +1,9 @@
 .form__part {
   border: none;
   padding: 0;
+  margin: 0;
+  // padding: 15px 0 15px 0;
+  // margin-top: 25px;
 }
 .form__part-title {
   font-size: 17px;
@@ -9,6 +12,8 @@
   text-transform: uppercase;
   color: $beaty-color;
   position: relative;
+  margin-top: 25px;
+  margin-bottom: 10px;
   &::after {
     position: absolute;
     top: 50%;
@@ -29,12 +34,12 @@
 .form__part-radio-label {
   @include label;
   display: block;
-  margin-left: 60px;
-  margin-top: 30px;
+  margin-left: 61px;
   position: relative;
   cursor: pointer;
+  margin-top: 30px;
   &:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
   }
   &::after {
     content: "";
@@ -66,12 +71,13 @@
 .form__part-checkbox-label {
   @include label;
   display: block;
-  margin-left: 60px;
-  margin-top: 45px;
+  margin-left: 61px;
+  margin-top: 35px;
+  margin-bottom: 44px;
   position: relative;
   cursor: pointer;
   &:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
   &::after {
     content: "";
@@ -102,9 +108,13 @@
 .form__part-text-label {
   @include label;
   display: block;
-  margin-top: 30px;
+  // margin-top: 30px;
+  margin-bottom: 25px;
+  &:first-child {
+    margin-top: 30px;
+  }
   &:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 }
 .form__part-text {
@@ -115,7 +125,7 @@
   margin: 0;
   border: none;
   border-bottom: 2px solid black;
-  padding: 15px 0 15px 0;
+  padding: 15px 0 16px 0;
   @include mobile-placeholder;
   &:focus {
     outline: none;
@@ -123,17 +133,17 @@
 }
 
 .form__part-wrapper--tel {
-  margin-bottom: 30px;
+  margin-bottom: 7px;
 }
 .form__part-title--tel {
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
 }
 .form__part-tel {
   @include mobile-inputs;
   border: none;
   border-bottom: 2px solid #000000;
   width: 100%;
-  padding: 15px 0 15px 0;
+  padding: 13px 0 16px 0;
   @include mobile-placeholder;
   &:focus {
     outline: none;
@@ -141,11 +151,11 @@
 }
 
 .form__part-wrapper--email {
-  margin-bottom: 30px;
+  margin-bottom: 7px;
 }
 
 .form__part-title--email {
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
 }
 
 .form__part-mail {
@@ -161,7 +171,7 @@
 }
 
 .form__part-title--textarea {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .form__part-textarea {
@@ -173,6 +183,7 @@
   min-height: 142px;
   padding: 15px 15px 15px 15px;
   resize: none;
+  margin-bottom: 0;
   @include mobile-placeholder;
   &:focus {
     outline: none;
@@ -180,9 +191,13 @@
 }
 
 .form__comment {
-  margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
+  margin-top: 10px;
+  margin-bottom: 31px;
+}
+.form__button {
+  width: 260px;
 }
 
 @media (min-width: $tablet-width) {
@@ -196,6 +211,7 @@
   }
 
   .form__part-title {
+    margin-top: 0;
     &::after {
       display: none;
     }
@@ -207,6 +223,8 @@
   }
   .form__part-wrapper--radios {
     display: flex;
+    padding-top: 55px;
+    padding-bottom: 70px;
   }
 
   .form-part--radios {
@@ -227,7 +245,7 @@
   .form__part-radio-label {
     font-size: 19px;
     line-height: 18px;
-    margin-bottom: 50px;
+    margin-bottom: 57px;
     margin-top: 0;
     margin-left: 0;
     &:last-child {
@@ -253,9 +271,9 @@
   .form__part-checkbox-label {
     font-size: 19px;
     line-height: 18px;
-    width: 140px;
+    width: 139px;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 58px;
     &:nth-child(10), &:nth-child(12) {
       margin-bottom: 0;
     }
@@ -281,17 +299,20 @@
   }
   .form__part-wrapper--checkboxes {
     display: flex;
-    padding-bottom: 65px;
+    padding-bottom: 69px;
+    padding-top: 65px;
   }
   .form-part--checkboxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 200px;
-    width: 390px;
+    width: 400px;
   }
   .form__part-wrapper--text-inputs {
     display: flex;
+    padding-top: 61px;
+    padding-bottom: 49px;
   }
   .form-part__text-inputs {
     margin-left: 123px;
@@ -301,26 +322,37 @@
     font-size: 19px;
     line-height: 18px;
     margin: 0;
-    margin-bottom: 55px;
+    // padding: 5px;
+    margin-bottom: 34px;
     display: flex;
+    align-items: baseline;
+    &:first-child {
+      margin-top: 0;
+    }
     &:last-child {
       margin-bottom: 0;
     }
   }
   .form__part-text {
     @include tablet-inputs;
-    margin-left: 20px;
+    margin-left: 23px;
     margin-top: 0;
-    padding: 5px 15px 15px 15px;
+    padding: 0 0 15px 15px;
     flex-grow: 1;
     @include tablet-placeholder;
+  }
+  .form__part--text .form__part-title {
+    margin-top: 8px;
+  }
+  .form__part-title--tel {
+    margin-top: 10px;
   }
 
   .form__part-wrapper--tel {
     display: flex;
     justify-content: space-between;
-    padding-top: 65px;
-    padding-bottom: 30px;
+    padding-top: 55px;
+    padding-bottom: 0px;
   }
   .form__part-tel {
     @include tablet-inputs;
@@ -331,11 +363,14 @@
     background-color: inherit;
     @include tablet-placeholder;
   }
+  .form__part-title--email {
+    margin-top: 10px;
+  }
   .form__part-wrapper--email {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 65px;
+    padding-top: 29px;
+    padding-bottom: 48px;
   }
 
   .form__part-mail {
@@ -350,6 +385,11 @@
   .form__part-wrapper--textarea {
     display: flex;
     justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 53px;
+  }
+  .form__part-title--textarea {
+    margin-top: 16px;
   }
   .form__part-textarea {
     @include tablet-inputs;
@@ -369,8 +409,15 @@
   }
   .form__comment {
     order: 1;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .form__button {
+    width: 230px;
+    border: 2px solid #000000;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .form__part-wrapper {
@@ -380,7 +427,7 @@
   }
   .form__part-wrapper--radios {
     padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 69px;
   }
 
   .form-part--radios {
@@ -390,7 +437,7 @@
 
   .form__part-wrapper--checkboxes {
     padding-top: 65px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
   }
 
   .form-part--checkboxes {
@@ -398,7 +445,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
-    margin-left: 145px;
+    margin-left: 150px;
     width: 100%;
   }
 
@@ -411,13 +458,13 @@
   }
 
   .form__part-wrapper--text-inputs {
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 60px;
+    padding-bottom: 48px;
   }
 
   .form-part__text-inputs {
     margin: 0;
-    margin-left: 65px;
+    margin-left: 69px;
   }
 
   .form__part-text {
@@ -428,8 +475,8 @@
   }
   .form__part-wrapper--tel {
     justify-content: flex-start;
-    padding-top: 65px;
-    padding-bottom: 30px;
+    padding-top: 55px;
+    padding-bottom: 0px;
   }
   .form__part-tel {
     margin-left: 80px;
@@ -438,7 +485,7 @@
   .form__part-wrapper--email {
     justify-content: flex-start;
     padding-top: 30px;
-    padding-bottom: 65px;
+    padding-bottom: 48px;
   }
   .form__part-mail {
     margin-left: 54px;

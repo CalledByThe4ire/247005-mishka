@@ -41,10 +41,14 @@
   }
   .details-parts__content--email {
      border-bottom: 1px solid #62d1ba;
+     font-size: 17px;
+  }
+  .details-parts__content--email a {
+    font-size: 17px;
   }
 
   .details-parts__content--address {
-    padding-right: 70px;
+    padding-right: 10px;
   }
 }
 
@@ -53,6 +57,6 @@
     width: 300px;
   }
   .details-parts__content--address {
-    padding-right: 40px;
+    padding-right: 20px;
   }
 }

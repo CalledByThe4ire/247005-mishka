@@ -8,7 +8,7 @@
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
-  padding: 25px 0;
+  padding: 27px 0;
   color: #ffffff;
   text-decoration: none;
   display: block;
@@ -38,11 +38,11 @@
 
   .products-navigator__button {
     width: 264px;
-    padding: 35px 35px;
+    padding: 26px 35px 45px 35px;
     font-size: 20px;
     line-height: 30px;
     &:hover {
-      transform: translateY(-10px);
+      transform: translateY(-5px);
       transition: .2s;
     }
     &:active .products-navigator__button-title {
@@ -64,6 +64,6 @@
   }
   .products-navigator__button {
     width: 455px;
-    padding: 35px 35px;
+    padding: 26px 35px 45px 35px;
   }
 }

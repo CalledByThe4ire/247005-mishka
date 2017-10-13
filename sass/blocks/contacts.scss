@@ -1,12 +1,14 @@
 .contacts {
   padding: 0;
+  padding-top: 4px;
 }
 .contacts__caption {
   font-size: 18px;
 }
 
 .contacts__details {
-  margin: 35px 0 35px 0;
+  margin: 25px 0 39px 0;
+  line-height: 30px;
 }
 
 .contacts__map {
@@ -23,10 +25,14 @@
 .contacts__contact-btn {
   width: 260px;
   display: block;
-  margin: 40px auto;
+  margin: 36px auto;
+  margin-bottom: 39px;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 7px;
+  }
   .contacts__map {
     background: url(../img/map-tablet@1x.jpg) no-repeat #f5ead8;
     background-position: 50% 50%;
@@ -39,15 +45,19 @@
   .contacts__caption {
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .contacts__details {
     display: flex;
+    font-size: 17px;
+    margin-bottom: 27px;
   }
   .contacts__contact-btn {
-    margin: 55px auto;
+    margin: auto;
     width: 230px;
+    margin-top: 52px;
+    margin-bottom: 60px;
   }
 }
 
@@ -64,13 +74,14 @@
     width: auto;
     padding: 0;
     margin: 0;
-    margin-left: 175px;
-    margin-top: 85px;
+    margin-left: 170px;
+    margin-top: 70px;
   }
 
   .contacts__caption {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 50px;
   }
   .contacts__details {
     flex-wrap: wrap;
@@ -89,7 +100,7 @@
   .contacts__contact-btn {
     margin-left: 175px;
     position: relative;
-    bottom: 105px;
-    margin-bottom: 0;
+    bottom: 101px;
+    margin-bottom: 6px;
   }
 }
