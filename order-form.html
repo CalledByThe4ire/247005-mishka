@@ -13,6 +13,9 @@
     <link href="fonts/opensansbold.woff2" rel="stylesheet">
   </head>
   <body class="main-block">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__content">
         <a href="index.html" class="page-header__logo">
@@ -23,7 +26,11 @@
           </picture>
         </a>
         <nav class="main-nav main-nav--nojs">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="main-nav__dropdown">
             <ul class="main-nav__list--site-nav  site-list">
               <li class="site-list__item">
@@ -41,10 +48,18 @@
             </ul>
             <ul class="main-nav__list--service-nav site-list">
               <li class="site-list__item site-list__item--search">
-                <a class="site-list__item-link site-list__item--search-icon" href="#">Поиск по&nbsp;сайту</a>
+                <a class="site-list__item-link" href="#">
+                  <svg class="site-list__item--search-icon" width="20" height="19">
+                    <use xlink:href="#icon-search">
+                  </svg>Поиск по&nbsp;сайту
+                </a>
               </li>
               <li class="site-list__item site-list__item--basket">
-                <a class="site-list__item-link site-list__item--basket-icon" href="#">Корзина: пока пуста</a>
+                <a class="site-list__item-link" href="#">
+                  <svg class="site-list__item--basket-icon" width="20" height="19">
+                    <use xlink:href="#icon-cart">
+                  </svg>Корзина: пока пуста
+                </a>
               </li>
             </ul>
           </div>
@@ -121,6 +136,9 @@
                 <legend class="form__part-title form__part-title--tel" aria-label="Номер телефона">
                   <label for="phone-number">Тел</label>
                 </legend>
+                <svg class="form__part--phone-icon" width="25" height="24">
+                  <use xlink:href="#icon-phone">
+                </svg>
                 <input class="form__part-tel" id="phone-number" type="tel" placeholder="+7 XXX XX XX*"
                 name="phone-input">
               </div>
@@ -130,6 +148,9 @@
                 <legend class="form__part-title form__part-title--email">
                   <label for="mail">E-mail</label>
                 </legend>
+                <svg class="form__part--mail-icon" width="32" height="21">
+                  <use xlink:href="#icon-mail">
+                </svg>
                 <input class="form__part-mail" type="email" id="mail" placeholder="Ваш Email*"
                 name="email-input">
               </div>
@@ -154,24 +175,42 @@
     <footer class="page-footer">
       <div class="main-block__wrapper page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="img/logo-mobile.svg" alt="Мишка">
+          <svg class="page-footer__logo--icon" width="102" height="34">
+            <use xlink:href="#icon-logo-footer">
+          </svg>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме">*</a>
+              <a href="#" class="social__link" aria-label="Мы в инстаграме">
+                <svg class="social__link--instagram" width="22" height="21">
+                  <use xlink:href="#icon-insta">
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке">*</a>
+              <a href="#" class="social__link" aria-label="Мы в фейсбуке">
+                <svg class="social__link--facebook" width="15" height="29">
+                  <use xlink:href="#icon-fb">
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--twitter" aria-label="Мы в твитере">*</a>
+              <a href="#" class="social__link" aria-label="Мы в твитере">
+                <svg class="social__link--twitter" width="24" height="20">
+                  <use xlink:href="#icon-twitter">
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__logo">Разработано</p>
-          <a class="copyright__logo-image" href="#" aria-label="HTML Academy"></a>
+          <a class="copyright__logo-image" href="#" aria-label="HTML Academy">
+            <svg width="27" height="34">
+              <use xlink:href="#icon-htmlacademy">
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

@@ -19,12 +19,25 @@
     background-color: #56c3b2;
   }
 }
+.products-navigator__button--int-icon {
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  fill: #3bb09d;
+}
+.products-navigator__button--toy-icon {
+  position: absolute;
+  fill: #35a999;
+  right: 0;
+  top: -5px;
+}
 
 .products-navigator__button-title {
   width: 260px;
   padding: 0 30px 0 30px;
   margin: 0 auto;
   display: block;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {

@@ -6,13 +6,16 @@
     <title>Мишка</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="fonts/opensans.woff" rel="stylesheet">
     <link href="fonts/opensans.woff2" rel="stylesheet">
     <link href="fonts/opensansbold.woff" rel="stylesheet">
     <link href="fonts/opensansbold.woff2" rel="stylesheet">
   </head>
   <body class="main-block">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__content">
         <a class="page-header__logo">
@@ -23,7 +26,11 @@
           </picture>
         </a>
         <nav class="main-nav main-nav--nojs">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="main-nav__dropdown">
             <ul class="main-nav__list--site-nav site-list">
               <li class="site-list__item">
@@ -41,10 +48,16 @@
             </ul>
             <ul class="main-nav__list--service-nav site-list">
               <li class="site-list__item site-list__item--search">
-                <a class="site-list__item-link site-list__item--search-icon" href="#">Поиск по&nbsp;сайту</a>
+                <a class="site-list__item-link" href="#">
+                  <svg class="site-list__item--search-icon" width="20" height="19"><use xlink:href="#icon-search">
+                  </svg>Поиск по&nbsp;сайту
+                </a>
               </li>
               <li class="site-list__item site-list__item--basket">
-                <a class="site-list__item-link site-list__item--basket-icon" href="#">Корзина: пока пуста</a>
+                <a class="site-list__item-link" href="#">
+                  <svg class="site-list__item--basket-icon" width="21" height="18"><use xlink:href="#icon-cart">
+                  </svg>Корзина: пока пуста
+                </a>
               </li>
             </ul>
           </div>
@@ -58,16 +71,24 @@
       </h1>
       <section class="products-navigator wave-line--fill">
         <div class="products-navigator__wrapper">
-          <a class="products-navigator__button products-navigator__button--int-icon" href="#">
-            <span class="products-navigator__button-title">Предметы<br>интерьера</span>
+          <a class="products-navigator__button" href="#">
+            <span class="products-navigator__button-title">Предметы<br>интерьера
+              <svg class="products-navigator__button--int-icon" width="41" height="62">
+                <use xlink:href="#icon-interior">
+              </svg>
+            </span>
           </a>
-          <a class="products-navigator__button products-navigator__button--toy-icon" href="#">
-            <span class="products-navigator__button-title">Детские<br>игрушки</span>
+          <a class="products-navigator__button" href="#">
+            <span class="products-navigator__button-title">Детские<br>игрушки
+              <svg class="products-navigator__button--toy-icon" width="61" height="61">
+                <use xlink:href="#icon-toy">
+              </svg>
+            </span>
           </a>
         </div>
       </section>
       <section class="week-product wave-line">
-        <div class="main-block__wrapper week-product__wrapper wave-line--desktop">
+        <div class="main-block__wrapper week-product__wrapper wave-line__desktop">
           <h2 class="main-block__caption week-product__caption">Вязаные корзинки</h2>
           <b class="week-product__promo-name">Товар недели</b>
           <dl class="week-product__characteristics characteristics-list">
@@ -103,18 +124,42 @@
         <div class="main-block__wrapper">
           <h2 class="main-block__caption about-us__caption">Коротко о&nbsp;нас:</h2>
           <ul class="about-us__list benefits-list">
-            <li class="benefits-list__item benefits-list__item--icon-eco">Экологически<br>чистые материалы</li>
-            <li class="benefits-list__item benefits-list__item--icon-price">Скандинавский стиль по&nbsp;российской цене</li>
-            <li class="benefits-list__item benefits-list__item--icon-like">Увеличивает лайки на&nbsp;фотографиях</li>
+            <li class="benefits-list__item benefits-list__item--icon-eco">Экологически<br>чистые материалы
+              <svg class="benefits-list__item--icon" width="32" height="38">
+                <use xlink:href="#icon-feature-flower">
+              </svg>
+            </li>
+            <li class="benefits-list__item benefits-list__item--icon-price">Скандинавский стиль по&nbsp;российской цене
+              <svg class="benefits-list__item--icon" width="47" height="27">
+                <use xlink:href="#icon-feature-money">
+              </svg>
+            </li>
+            <li class="benefits-list__item benefits-list__item--icon-like">Увеличивает лайки на&nbsp;фотографиях
+              <svg class="benefits-list__item--icon" width="34" height="27">
+                <use xlink:href="#icon-feature-heart">
+              </svg>
+            </li>
             <li class="benefits-list__item benefits-list__item--icon-hand">Связано вручную с<br>любовью
-            и&nbsp;умилением</li>
-            <li class="benefits-list__item benefits-list__item--icon-sup">Поддержка отечественного производителя</li>
-            <li class="benefits-list__item benefits-list__item--icon-pack">Поставляется в<br>подарочной упаковке</li>
+            и&nbsp;умилением
+              <svg class="benefits-list__item--icon" width="34" height="34">
+                <use xlink:href="#icon-feature-ball">
+              </svg>
+            </li>
+            <li class="benefits-list__item benefits-list__item--icon-sup">Поддержка отечественного производителя
+              <svg class="benefits-list__item--icon" width="55" height="23">
+                <use xlink:href="#icon-feature-rocket">
+              </svg>
+            </li>
+            <li class="benefits-list__item benefits-list__item--icon-pack">Поставляется в<br>подарочной упаковке
+              <svg class="benefits-list__item--icon" width="33" height="32">
+                <use xlink:href="#icon-feature-gift">
+              </svg>
+            </li>
           </ul>
         </div>
       </section>
       <section class="reviews wave-line">
-        <div class="main-block__wrapper slider wave-line--desktop">
+        <div class="main-block__wrapper slider wave-line__desktop wave-line__desktop--slider">
           <h2 class="main-block__caption reviews__caption">Отзывы</h2>
           <div class="slider__slide-list">
             <blockquote class="reviews__item slider__item">
@@ -135,10 +180,14 @@
             </blockquote>
           </div>
           <div class="reviews__pagination slider__toggles">
-            <button class="slider__toggle slider__toggle--prev" type="button"
-            aria-label="Предыдущий отзыв"></button>
-            <button class="slider__toggle slider__toggle--next" type="button"
-            aria-label="Следующий отзыв"></button>
+            <button class="slider__toggle" type="button"
+            aria-label="Предыдущий отзыв">
+              <svg class="slider__toggle--prev" width="51" height="26"><use xlink:href="#icon-left-arrow"></svg>
+            </button>
+            <button class="slider__toggle" type="button"
+            aria-label="Следующий отзыв">
+              <svg class="slider__toggle--next" width="51" height="26"><use xlink:href="#icon-right-arrow"></svg>
+            </button>
           </div>
           <a class="reviews__make-review button" href="#">Написать</a>
         </div>
@@ -146,6 +195,7 @@
       <section class="contacts">
         <div class="contacts__desktop-wrapper">
           <div class="main-block__wrapper contacts__wrapper">
+            <svg class="contacts__flag-icon" width="48" height="84"><use xlink:href="#icon-flag"></svg>
             <h2 class="main-block__caption contacts__caption">Контакты</h2>
             <dl class="contacts__details details-parts">
               <div class="details-parts__item">
@@ -169,24 +219,42 @@
     <footer class="page-footer">
       <div class="main-block__wrapper page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="img/logo-mobile.svg" alt="Мишка">
+          <svg class="page-footer__logo--icon" width="102" height="34">
+            <use xlink:href="#icon-logo-footer">
+          </svg>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="#" class="social__link social__link--instagram" aria-label="Мы в инстаграме">*</a>
+              <a href="#" class="social__link" aria-label="Мы в инстаграме">
+                <svg class="social__link--instagram" width="22" height="21">
+                  <use xlink:href="#icon-insta">
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--facebook" aria-label="Мы в фейсбуке">*</a>
+              <a href="#" class="social__link" aria-label="Мы в фейсбуке">
+                <svg class="social__link--facebook" width="15" height="29">
+                  <use xlink:href="#icon-fb">
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link social__link--twitter" arial-label="Мы в твитере">*</a>
+              <a href="#" class="social__link" arial-label="Мы в твитере">
+                <svg class="social__link--twitter" width="24" height="20">
+                  <use xlink:href="#icon-twitter">
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__logo">Разработано</p>
-          <a class="copyright__logo-image" href="#" aria-label="HTML Academy"></a>
+          <a href="#" aria-label="HTML Academy">
+            <svg class="copyright__logo-image" width="27" height="34">
+              <use xlink:href="#icon-htmlacademy">
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

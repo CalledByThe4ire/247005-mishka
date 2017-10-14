@@ -12,7 +12,7 @@ window.initMap = function() {
   });
 
         // Маркер
-  var image = 'img/icon-map-pin.svg';
+  var image = 'img/map-pin.svg';
   var marker = new google.maps.Marker({
     map: map,
     position: myLatLng,

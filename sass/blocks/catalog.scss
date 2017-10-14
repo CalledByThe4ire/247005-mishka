@@ -49,8 +49,21 @@
   display: block;
   width: 30px;
   height: 30px;
-  outline: 1px solid cyan;
   margin: auto 0;
+  position: relative;
+}
+.catalog-item__basket-icon {
+  fill: #d3d2d2;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  &:hover {
+    fill: $beaty-color;
+  }
+    &:active {
+    fill: $beaty-color;
+    fill-opacity: 0.6;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -11,28 +11,35 @@
 .benefits-list__item {
   margin-bottom: 28px;
   padding-top: 55px;
+  position: relative;
   &:last-child {
     margin-bottom: 0;
   }
 }
 .benefits-list__item--icon-eco {
-  background: url(../img/icon-feature-flower.svg) no-repeat #ffffff 0% 0%;
+
 }
 .benefits-list__item--icon-price {
-  background: url(../img/icon-feature-money.svg) no-repeat #ffffff 0% 0%;
+
 }
 .benefits-list__item--icon-like {
-  background: url(../img/icon-feature-heart.svg) no-repeat #ffffff 0% 0%;
+
 }
 .benefits-list__item--icon-hand {
-  background: url(../img/icon-feature-ball.svg) no-repeat #ffffff 0% 0%;
+
 }
 .benefits-list__item--icon-sup {
-  background: url(../img/icon-feature-rocket.svg) no-repeat #ffffff 0% 0%;
+
 }
 .benefits-list__item--icon-pack {
-  background: url(../img/icon-feature-gift.svg) no-repeat #ffffff 0% 0%;
+
 }
+  .benefits-list__item--icon {
+    fill: $beaty-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
 @media(min-width: $tablet-width) {
   .benefits-list {
@@ -51,19 +58,24 @@
     margin-bottom: 53px;
     padding-top: 60px;
   }
-  .benefits-list__item--icon-price {
+  // .benefits-list__item--icon-price
+  .benefits-list__item:nth-child(2) {
     order: 2;
   }
-  .benefits-list__item--icon-like {
+  // .benefits-list__item--icon-like
+  .benefits-list__item:nth-child(3) {
     order: 4;
   }
-  .benefits-list__item--icon-hand {
+  // .benefits-list__item--icon-hand
+  .benefits-list__item:nth-child(4) {
     order: 1;
   }
-  .benefits-list__item--icon-sup {
+  // .benefits-list__item--icon-sup
+  .benefits-list__item:nth-child(5) {
     order: 3;
   }
-  .benefits-list__item--icon-pack {
+  // .benefits-list__item--icon-pack
+  .benefits-list__item:nth-child(6) {
     order: 5;
   }
 }

@@ -28,10 +28,16 @@
   margin: 36px auto;
   margin-bottom: 39px;
 }
+.contacts__flag-icon {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 7px;
+  }
+  .contacts__desktop-wrapper {
+    position: relative;
   }
   .contacts__map {
     background: url(../img/map-tablet@1x.jpg) no-repeat #f5ead8;
@@ -59,7 +65,14 @@
     margin-top: 52px;
     margin-bottom: 60px;
   }
+  .contacts__flag-icon {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: -20px;
+  }
 }
+
 
 @media (min-width: $desktop-width) {
   .contacts__desktop-wrapper {
@@ -102,5 +115,9 @@
     position: relative;
     bottom: 101px;
     margin-bottom: 6px;
+  }
+  .contacts__flag-icon {
+    left: 110px;
+    top: 60px;
   }
 }

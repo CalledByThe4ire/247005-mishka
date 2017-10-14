@@ -10,16 +10,19 @@
 }
 
 .copyright__logo-image {
-  background: url(../img/logo-htmlacademy.svg) no-repeat #fafafa 50% 50%;
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0;
+  fill: $beaty-color;
+  &:hover {
+    fill: #46c1ae;
+  }
+  &:active {
+    fill: #46c1ae;
+    fill-opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright__logo {
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
     padding-top: 7px;
   }
 }

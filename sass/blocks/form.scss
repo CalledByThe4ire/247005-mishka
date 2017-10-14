@@ -134,6 +134,13 @@
 
 .form__part-wrapper--tel {
   margin-bottom: 7px;
+  position: relative;
+}
+.form__part--phone-icon {
+  position: absolute;
+  fill: #cccccc;
+  right: 5px;
+  top: 35px;
 }
 .form__part-title--tel {
   // margin-bottom: 5px;
@@ -143,7 +150,8 @@
   border: none;
   border-bottom: 2px solid #000000;
   width: 100%;
-  padding: 13px 0 16px 0;
+  padding: 13px 35px 16px 0;
+  box-sizing: border-box; // если что переопределить
   @include mobile-placeholder;
   &:focus {
     outline: none;
@@ -152,6 +160,13 @@
 
 .form__part-wrapper--email {
   margin-bottom: 7px;
+  position: relative;
+}
+.form__part--mail-icon {
+  position: absolute;
+  fill: #cccccc;
+  right: 5px;
+  top: 35px;
 }
 
 .form__part-title--email {
@@ -163,7 +178,8 @@
   border: none;
   border-bottom: 2px solid #000000;
   width: 100%;
-  padding: 15px 0 15px 0;
+  padding: 15px 35px 15px 0;
+  box-sizing: border-box; // если что переопределить
   @include mobile-placeholder;
   &:focus {
     outline: none;
@@ -358,11 +374,15 @@
     @include tablet-inputs;
     width: 500px;
     margin: 0;
-    padding: 5px 15px 15px 15px;
+    padding: 5px 55px 15px 15px;
     box-sizing: border-box;
     background-color: inherit;
     @include tablet-placeholder;
   }
+  .form__part--phone-icon {
+    right: 75px;
+    top: 60px;
+}
   .form__part-title--email {
     margin-top: 10px;
   }
@@ -377,11 +397,15 @@
     @include tablet-inputs;
     width: 500px;
     margin: 0;
-    padding: 5px 15px 15px 15px;
+    padding: 5px 55px 15px 15px;
     box-sizing: border-box;
     background-color: inherit;
     @include tablet-placeholder;
   }
+  .form__part--mail-icon {
+    right: 75px;
+    top: 40px;
+}
   .form__part-wrapper--textarea {
     display: flex;
     justify-content: space-between;
@@ -478,6 +502,10 @@
     padding-top: 55px;
     padding-bottom: 0px;
   }
+  .form__part--phone-icon {
+    right: 240px;
+    top: 60px;
+  }
   .form__part-tel {
     margin-left: 80px;
     width: 700px;
@@ -486,6 +514,10 @@
     justify-content: flex-start;
     padding-top: 30px;
     padding-bottom: 48px;
+  }
+  .form__part--mail-icon {
+    right: 235px;
+    top: 45px;
   }
   .form__part-mail {
     margin-left: 54px;

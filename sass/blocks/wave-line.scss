@@ -52,7 +52,7 @@
       background-size: auto 35px;
     }
   }
-  .wave-line--desktop {
+  .wave-line__desktop {
     &::after {
       content: "";
       display: block;
@@ -63,6 +63,11 @@
       background-image: url(../img/bg-zigzag-line.svg);
       background-position: center;
       background-size: auto 25px;
+    }
+  }
+  .wave-line__desktop--slider {
+    &::after {
+      bottom: -15px;
     }
   }
 }
