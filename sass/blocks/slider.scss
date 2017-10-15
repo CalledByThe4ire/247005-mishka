@@ -5,7 +5,7 @@
   justify-content: space-between;
   box-sizing: border-box;
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 .slider__toggle {
   width: 130px;
@@ -59,6 +59,9 @@
     position: relative;
     top: -85px;
   }
+  .slider__toggle {
+    border: none;
+  }
 }
 
 
@@ -70,7 +73,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url(../img/review@2x.jpg);
       background-size: 350px auto;
-  }
+    }
   }
   .slider__slide-list {
     margin-left: 175px;

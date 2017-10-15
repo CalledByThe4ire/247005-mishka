@@ -7,10 +7,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="fonts/opensans.woff" rel="stylesheet">
-    <link href="fonts/opensans.woff2" rel="stylesheet">
-    <link href="fonts/opensansbold.woff" rel="stylesheet">
-    <link href="fonts/opensansbold.woff2" rel="stylesheet">
   </head>
   <body class="main-block">
     <div style="display: none">
@@ -27,9 +23,9 @@
         </a>
         <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="main-nav__toggle--part"></span>
+            <span class="main-nav__toggle--part"></span>
+            <span class="main-nav__toggle--part"></span>
           </button>
           <div class="main-nav__dropdown">
             <ul class="main-nav__list--site-nav site-list">
@@ -109,6 +105,11 @@
           </dl>
           <figure class="week-product__image-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1250px)"
+              srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
               <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
@@ -124,34 +125,34 @@
         <div class="main-block__wrapper">
           <h2 class="main-block__caption about-us__caption">Коротко о&nbsp;нас:</h2>
           <ul class="about-us__list benefits-list">
-            <li class="benefits-list__item benefits-list__item--icon-eco">Экологически<br>чистые материалы
-              <svg class="benefits-list__item--icon" width="32" height="38">
+            <li class="benefits-list__item">Экологически<br>чистые материалы
+              <svg class="benefits-list__item--icon-eco" width="32" height="38">
                 <use xlink:href="#icon-feature-flower">
               </svg>
             </li>
-            <li class="benefits-list__item benefits-list__item--icon-price">Скандинавский стиль по&nbsp;российской цене
-              <svg class="benefits-list__item--icon" width="47" height="27">
+            <li class="benefits-list__item">Скандинавский стиль по&nbsp;российской цене
+              <svg class="benefits-list__item--icon-price" width="47" height="27">
                 <use xlink:href="#icon-feature-money">
               </svg>
             </li>
-            <li class="benefits-list__item benefits-list__item--icon-like">Увеличивает лайки на&nbsp;фотографиях
-              <svg class="benefits-list__item--icon" width="34" height="27">
+            <li class="benefits-list__item">Увеличивает лайки на&nbsp;фотографиях
+              <svg class="benefits-list__item--icon-like" width="34" height="27">
                 <use xlink:href="#icon-feature-heart">
               </svg>
             </li>
-            <li class="benefits-list__item benefits-list__item--icon-hand">Связано вручную с<br>любовью
+            <li class="benefits-list__item">Связано вручную с<br>любовью
             и&nbsp;умилением
-              <svg class="benefits-list__item--icon" width="34" height="34">
+              <svg class="benefits-list__item--icon-hand" width="34" height="34">
                 <use xlink:href="#icon-feature-ball">
               </svg>
             </li>
-            <li class="benefits-list__item benefits-list__item--icon-sup">Поддержка отечественного производителя
-              <svg class="benefits-list__item--icon" width="55" height="23">
+            <li class="benefits-list__item">Поддержка отечественного производителя
+              <svg class="benefits-list__item--icon-sup" width="55" height="23">
                 <use xlink:href="#icon-feature-rocket">
               </svg>
             </li>
-            <li class="benefits-list__item benefits-list__item--icon-pack">Поставляется в<br>подарочной упаковке
-              <svg class="benefits-list__item--icon" width="33" height="32">
+            <li class="benefits-list__item">Поставляется в<br>подарочной упаковке
+              <svg class="benefits-list__item--icon-pack" width="33" height="32">
                 <use xlink:href="#icon-feature-gift">
               </svg>
             </li>
@@ -200,8 +201,9 @@
             <dl class="contacts__details details-parts">
               <div class="details-parts__item">
                 <dt class="details-parts__type">e-mail:</dt>
-                <dd class="details-parts__content details-parts__content--email">
-                  <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                <dd class="details-parts__content">
+                  <a class="details-parts__content--email"
+                  href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
                 </dd>
               </div>
               <div class="details-parts__item">
@@ -218,11 +220,11 @@
     </main>
     <footer class="page-footer">
       <div class="main-block__wrapper page-footer__wrapper">
-        <div class="page-footer__logo">
+        <a class="page-footer__logo">
           <svg class="page-footer__logo--icon" width="102" height="34">
             <use xlink:href="#icon-logo-footer">
           </svg>
-        </div>
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -250,7 +252,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__logo">Разработано</p>
-          <a href="#" aria-label="HTML Academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="HTML Academy">
             <svg class="copyright__logo-image" width="27" height="34">
               <use xlink:href="#icon-htmlacademy">
             </svg>
@@ -271,7 +273,7 @@
       </div>
     </div>
     <div class="modal-overlay"></div>
-    <script src="js/script.js" async defer></script>
+    <script src="js/script.min.js" async defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHIFHg91wnChC8qGQtgjFXbhiu6fAV8K8&callback=initMap"
     async defer></script>
   </body>

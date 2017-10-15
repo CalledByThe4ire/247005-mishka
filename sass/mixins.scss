@@ -92,3 +92,10 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin benefits-icon {
+  fill: $beaty-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 .products-navigator__button {
   font-size: 19px;
   line-height: 24px;
@@ -21,14 +20,14 @@
 }
 .products-navigator__button--int-icon {
   position: absolute;
-  right: 10px;
+  right: 35px;
   top: -5px;
   fill: #3bb09d;
 }
 .products-navigator__button--toy-icon {
   position: absolute;
   fill: #35a999;
-  right: 0;
+  right: 25px;
   top: -5px;
 }
 
@@ -56,10 +55,10 @@
     line-height: 30px;
     &:hover {
       transform: translateY(-5px);
-      transition: .2s;
+      transition: 0.2s;
     }
     &:active .products-navigator__button-title {
-      opacity: .3;
+      opacity: 0.3;
     }
   }
   .products-navigator__button-title {
@@ -68,6 +67,14 @@
     margin: 0;
     display: block;
   }
+  .products-navigator__button--int-icon {
+    right: 0px;
+    top: 2px;
+}
+  .products-navigator__button--toy-icon {
+    right: 0px;
+    top: 3px;
+}
 }
 
 @media (min-width: $desktop-width) {

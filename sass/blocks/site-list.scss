@@ -1,5 +1,5 @@
 .site-list__item--hidden {
-    display: none;
+  display: none;
 }
 .site-list__item {
   border-bottom: 1px solid #ececec;
@@ -16,6 +16,19 @@
   text-align: left;
   margin: auto;
   width: 185px;
+  &:hover {
+    opacity: 0.6;
+    .site-list__item--basket-icon {
+      fill: $beaty-color;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+    .site-list__item--basket-icon {
+        fill: $beaty-color;
+        fill-opacity: 0.6;
+    }
+  }
 }
 .site-list__item--search-icon {
   fill: #d3d2d2;
@@ -35,13 +48,6 @@
   position: absolute;
   left: -28px;
   top: 30px;
-   &:hover {
-    fill: $beaty-color;
-  }
-    &:active {
-    fill: $beaty-color;
-    fill-opacity: 0.6;
-  }
 }
 
 
@@ -73,31 +79,27 @@
     font-size: 15px;
     padding-right: 5px;
   }
-  // .site-list .site-list__item--search-icon
   .site-list__item--search .site-list__item-link {
     font-size: 0;
     width: 30px;
     height: 30px;
     margin: auto;
-    // background: url(../img/icon-search.svg) no-repeat #ffffff 50% 50%;
   }
 
-  // .site-list .site-list__item--basket-icon {
   .site-list__item--basket .site-list__item-link {
     margin: auto;
     margin-right: 0;
     width: 85%;
     height: 30px;
     text-align: right;
-    // background: url(../img/icon-cart.svg) no-repeat #ffffff 0% 45%;
   }
   .site-list__item--search-icon {
     left: 5px;
     top: 5px;
 
-}
+  }
   .site-list__item--basket-icon {
-    left: 0px;
+    left: -8px;
     top: 5px;
   }
 }

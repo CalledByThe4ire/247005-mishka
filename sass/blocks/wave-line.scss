@@ -10,15 +10,15 @@
     background-image: url(../img/bg-zigzag-line.svg);
     background-position: center;
     background-size: auto 8px;
-    }
   }
+}
 
 @media(min-width: $tablet-width) {
   .wave-line {
   &::after {
     height: 18px;
     background-size: auto 18px;
-    bottom: -20px;
+    bottom: -15px;
     background-position: 50% 50%;
   }
 }

@@ -7,10 +7,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <link href="css/style.css" rel="stylesheet">
-    <link href="fonts/opensans.woff" rel="stylesheet">
-    <link href="fonts/opensans.woff2" rel="stylesheet">
-    <link href="fonts/opensansbold.woff" rel="stylesheet">
-    <link href="fonts/opensansbold.woff2" rel="stylesheet">
   </head>
   <body class="main-block">
     <div style="display: none">
@@ -76,6 +72,11 @@
           <article class="catalog__item catalog-item">
             <a class="catalog-image__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
                 <source media="(min-width: 1250px)"
                 srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -100,6 +101,11 @@
           <article class="catalog__item catalog-item">
             <a class="catalog-image__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
                 <source media="(min-width: 1250px)"
                 srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -124,6 +130,11 @@
           <article class="catalog__item catalog-item">
             <a class="catalog-image__link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
                 <source media="(min-width: 1250px)"
                 srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -153,6 +164,11 @@
             <figcaption class="production-process__title">Процесс производства</figcaption>
             <video class="production-process__video"></video>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1250px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" class="production-process__img"/>
@@ -174,11 +190,11 @@
     </main>
     <footer class="page-footer">
       <div class="main-block__wrapper page-footer__wrapper">
-        <div class="page-footer__logo">
+        <a href="index.html" class="page-footer__logo">
           <svg class="page-footer__logo--icon" width="102" height="34">
             <use xlink:href="#icon-logo-footer">
           </svg>
-        </div>
+        </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -206,7 +222,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__logo">Разработано</p>
-          <a href="#" aria-label="HTML Academy">
+          <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="HTML Academy">
             <svg class="copyright__logo-image" width="27" height="34">
               <use xlink:href="#icon-htmlacademy">
             </svg>
@@ -227,6 +243,6 @@
       </div>
     </div>
     <div class="modal-overlay"></div>
-    <script src="js/script.js" async defer></script>
+    <script src="js/script.min.js" async defer></script>
   </body>
 </html>

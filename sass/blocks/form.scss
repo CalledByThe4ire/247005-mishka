@@ -2,8 +2,6 @@
   border: none;
   padding: 0;
   margin: 0;
-  // padding: 15px 0 15px 0;
-  // margin-top: 25px;
 }
 .form__part-title {
   font-size: 17px;
@@ -53,6 +51,12 @@
     top: -10px;
   }
 }
+.form__part-radio-label:hover::after {
+  border: 2px solid $beaty-color;
+}
+.form__part-radio-label:active::after {
+  border: 2px solid #cecece;
+}
 .form__part-radio:checked + .form__part-radio-label:before {
   content: "";
   position: absolute;
@@ -90,6 +94,12 @@
     top: -10px;
   }
 }
+.form__part-checkbox-label:hover::after {
+  border: 2px solid $beaty-color;
+}
+.form__part-checkbox-label:active::after {
+  border: 2px solid #cecece;
+}
 .form__part-checkbox:checked + .form__part-checkbox-label:before {
   content: "";
   position: absolute;
@@ -108,7 +118,6 @@
 .form__part-text-label {
   @include label;
   display: block;
-  // margin-top: 30px;
   margin-bottom: 25px;
   &:first-child {
     margin-top: 30px;
@@ -129,6 +138,10 @@
   @include mobile-placeholder;
   &:focus {
     outline: none;
+    border-bottom: 2px solid $beaty-color;
+  }
+  &:hover, &:active {
+    border-bottom: 2px solid $beaty-color;
   }
 }
 
@@ -142,20 +155,27 @@
   right: 5px;
   top: 35px;
 }
-.form__part-title--tel {
-  // margin-bottom: 5px;
-}
+
 .form__part-tel {
   @include mobile-inputs;
   border: none;
   border-bottom: 2px solid #000000;
   width: 100%;
   padding: 13px 35px 16px 0;
-  box-sizing: border-box; // если что переопределить
+  box-sizing: border-box;
   @include mobile-placeholder;
   &:focus {
     outline: none;
+    border-bottom: 2px solid $beaty-color;
   }
+  &:hover, &:active {
+    border-bottom: 2px solid $beaty-color;
+  }
+}
+.form__part-tel:hover + .form__part--phone-icon,
+.form__part-tel:active + .form__part--phone-icon,
+.form__part-tel:focus + .form__part--phone-icon {
+  fill: $beaty-color;
 }
 
 .form__part-wrapper--email {
@@ -169,21 +189,27 @@
   top: 35px;
 }
 
-.form__part-title--email {
-  // margin-bottom: 5px;
-}
-
 .form__part-mail {
   @include mobile-inputs;
   border: none;
   border-bottom: 2px solid #000000;
   width: 100%;
   padding: 15px 35px 15px 0;
-  box-sizing: border-box; // если что переопределить
+  box-sizing: border-box;
   @include mobile-placeholder;
   &:focus {
     outline: none;
+    border-bottom: 2px solid $beaty-color;
   }
+  &:hover, &:active {
+    border-bottom: 2px solid $beaty-color;
+    }
+}
+
+.form__part-mail:hover + .form__part--mail-icon,
+.form__part-mail:active + .form__part--mail-icon,
+.form__part-mail:focus + .form__part--mail-icon {
+  fill: $beaty-color;
 }
 
 .form__part-title--textarea {
@@ -203,6 +229,10 @@
   @include mobile-placeholder;
   &:focus {
     outline: none;
+    border: 2px solid $beaty-color;
+  }
+  &:hover, &:active {
+    border: 2px solid $beaty-color;
   }
 }
 
@@ -338,7 +368,6 @@
     font-size: 19px;
     line-height: 18px;
     margin: 0;
-    // padding: 5px;
     margin-bottom: 34px;
     display: flex;
     align-items: baseline;
@@ -382,7 +411,7 @@
   .form__part--phone-icon {
     right: 75px;
     top: 60px;
-}
+  }
   .form__part-title--email {
     margin-top: 10px;
   }
@@ -403,9 +432,11 @@
     @include tablet-placeholder;
   }
   .form__part--mail-icon {
-    right: 75px;
-    top: 40px;
-}
+    right: 70px;
+    top: 35px;
+    width: 35px;
+    height: 30px;
+  }
   .form__part-wrapper--textarea {
     display: flex;
     justify-content: space-between;
@@ -438,7 +469,6 @@
   }
   .form__button {
     width: 230px;
-    border: 2px solid #000000;
   }
 }
 
@@ -503,7 +533,7 @@
     padding-bottom: 0px;
   }
   .form__part--phone-icon {
-    right: 240px;
+    right: 235px;
     top: 60px;
   }
   .form__part-tel {
@@ -516,8 +546,8 @@
     padding-bottom: 48px;
   }
   .form__part--mail-icon {
-    right: 235px;
-    top: 45px;
+    right: 230px;
+    top: 35px;
   }
   .form__part-mail {
     margin-left: 54px;

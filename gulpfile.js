@@ -6,6 +6,8 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
+var uglify = require("gulp-uglify");
+var pump = require("pump");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -28,6 +30,17 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("minify-js", function(cb) {
+  pump([
+       gulp.src("js/*.js"),
+       uglify(),
+       rename("script.min.js"),
+       gulp.dest("build/js")
+    ],
+    cb
+  );
 });
 
 gulp.task("images", function() {
@@ -72,13 +85,12 @@ gulp.task("serve", function() {
     ui: false
   });
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  // gulp.watch("*.html").on("change", server.reload);
   gulp.watch("*.html", ["html"]);
   gulp.watch("*.html").on("change", server.reload);
 });
 
 gulp.task("build", function(done){
-  run("style", "sprite", "html", done);
+  run("style", "minify-js", "sprite", "html", done);
 });
 
 gulp.task("copy", function() {
@@ -101,6 +113,7 @@ gulp.task("build", function(done) {
     "clean",
     "copy",
     "style",
+    "minify-js",
     "sprite",
     "html",
     done

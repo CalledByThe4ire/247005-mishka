@@ -1,5 +1,5 @@
 .catalog {
-  margin: 30px 0 34px 0;
+  margin: 29px 0 34px 0;
 }
 
 .catalog__item {
@@ -7,6 +7,12 @@
   outline: 1px solid #ededed;
   &:last-child {
     margin-bottom: 0;
+  }
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 .catalog-item_link {
@@ -21,6 +27,12 @@
   margin-top: 20px;
   margin-bottom: 5px;
   margin-left: 28px;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-item__details {
@@ -55,12 +67,12 @@
 .catalog-item__basket-icon {
   fill: #d3d2d2;
   position: absolute;
-  top: 5px;
-  right: 0;
+  top: 3px;
+  right: 0px;
   &:hover {
     fill: $beaty-color;
   }
-    &:active {
+  &:active {
     fill: $beaty-color;
     fill-opacity: 0.6;
   }
@@ -107,7 +119,6 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .catalog {
     margin-top: 118px;
@@ -141,5 +152,6 @@
     margin-bottom: 10px;
   }
   .catalog-item__price {
+    margin-left: -2px;
   }
 }

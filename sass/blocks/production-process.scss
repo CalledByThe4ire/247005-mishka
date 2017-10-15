@@ -3,6 +3,12 @@
   outline: 1px solid #ededed;
   position: relative;
   padding-bottom: 34px;
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production-process__title {
@@ -41,6 +47,9 @@
   margin: 0;
   background-color: inherit;
   border: none;
+  &:hover, &:active {
+    background-color: inherit;
+  }
 }
 .production-process__order-btn {
   width: 190px;
@@ -161,7 +170,8 @@
     margin-right: calc(290px - 230px);
   }
   .production-process__video-icon {
-    top: 48px;
+    top: 40px;
     left: 760px;
+    height: 30px;
   }
 }

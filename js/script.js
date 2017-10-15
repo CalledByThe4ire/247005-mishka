@@ -38,17 +38,17 @@ toggleBtn.onclick = toggleMenu;
 
 //Попап
 
-var link = document.querySelector('.main-block__modal-btn');
+var link = document.querySelectorAll('.main-block__modal-btn');
 var popupContent = document.querySelector('.modal-dialog');
 var popupOverlay = document.querySelector('.modal-overlay');
 
-link.addEventListener('click', function(event) {
-  event.preventDefault();
-  popupContent.classList.add('modal-dialog--open');
-  popupOverlay.classList.add('modal-overlay--open');
+link.forEach(function(item, i, arr) {
+  link[i].addEventListener('click', function(event) {
+    event.preventDefault();
+    popupContent.classList.add('modal-dialog--open');
+    popupOverlay.classList.add('modal-overlay--open');
+  });
 });
-
-
 
 popupOverlay.addEventListener('click', function(event) {
   event.preventDefault();
