@@ -1,8 +1,37 @@
 .social__list {
   list-style: none;
-  width: 150px;
+  width: 145px;
   margin: auto;
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+
+.social__link--instagram {
+  &:hover {
+    fill: $beaty-color;
+  }
+  &:active {
+    fill: $beaty-color;
+    fill-opacity: 0.6;
+  }
+}
+.social__link--facebook {
+  &:hover {
+    fill: $beaty-color;
+  }
+  &:active {
+    fill: $beaty-color;
+    fill-opacity: 0.6;
+  }
+}
+.social__link--twitter {
+  &:hover {
+    fill: $beaty-color;
+  }
+  &:active {
+    fill: $beaty-color;
+    fill-opacity: 0.6;
+  }
 }

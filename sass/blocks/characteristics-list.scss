@@ -1,10 +1,10 @@
 .characteristics-list__item {
   display: flex;
   width: 260px;
-  padding: 10px 0 10px 0;
+  align-items: center;
   height: auto;
   box-sizing: border-box;
-  height: 42px;
+  height: 40px;
   border-bottom: 1px solid #ececec;
 }
 .characteristics-list__item-param--type {

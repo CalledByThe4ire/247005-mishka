@@ -12,7 +12,7 @@ window.initMap = function() {
   });
 
         // Маркер
-  var image = 'img/icon-map-pin.svg';
+  var image = 'img/map-pin.svg';
   var marker = new google.maps.Marker({
     map: map,
     position: myLatLng,
@@ -38,17 +38,17 @@ toggleBtn.onclick = toggleMenu;
 
 //Попап
 
-var link = document.querySelector('.main-block__modal-btn');
+var link = document.querySelectorAll('.main-block__modal-btn');
 var popupContent = document.querySelector('.modal-dialog');
 var popupOverlay = document.querySelector('.modal-overlay');
 
-link.addEventListener('click', function(event) {
-  event.preventDefault();
-  popupContent.classList.add('modal-dialog--open');
-  popupOverlay.classList.add('modal-overlay--open');
+link.forEach(function(item, i, arr) {
+  link[i].addEventListener('click', function(event) {
+    event.preventDefault();
+    popupContent.classList.add('modal-dialog--open');
+    popupOverlay.classList.add('modal-overlay--open');
+  });
 });
-
-
 
 popupOverlay.addEventListener('click', function(event) {
   event.preventDefault();
@@ -71,7 +71,7 @@ var slider = document.querySelector('.slider');
 var slides = slider.querySelectorAll('blockquote');
 var currentSlide = 0;
 slides[1].style.display = "none";
-slides[2].style.display = "none";
+// slides[2].style.display = "none";
 function slideToggle(toggle) {
   slides[currentSlide].style.display = "none";
   currentSlide += toggle;

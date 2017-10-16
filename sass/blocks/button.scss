@@ -16,6 +16,14 @@
   background-color: #ffffff;
   cursor: pointer;
   vertical-align: middle;
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+  }
+  &:active {
+    background-color: #444444;
+    color: #535353;
+  }
   &:focus {
     outline: none;
   }

@@ -1,10 +1,16 @@
 .about-us {
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   padding: 0;
+  padding-top: 7px;
 }
-
+@media(min-width: $tablet-width) {
+  .about-us {
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+}
 @media(min-width: $desktop-width) {
   .about-us__caption {
-    margin-left: 175px;
+    margin-left: 170px;
   }
 }

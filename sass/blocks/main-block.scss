@@ -6,6 +6,7 @@
   font-size: 15px;
   line-height: 24px;
   color: #444444;
+  min-width: 320px;
 }
 
 .main-block__wrapper {
@@ -38,6 +39,7 @@
     position: absolute;
     top: 105px;
     right: 50px;
+    z-index: 2;
   }
   .main-block__caption {
     font-size: 43px;

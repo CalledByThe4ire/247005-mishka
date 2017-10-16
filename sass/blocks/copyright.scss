@@ -1,24 +1,29 @@
 .copyright__logo {
-  margin: auto 0;
   font-size: 19px;
   line-height: 18px;
   font-weight: bold;
   color: #000000;
-  margin-left: 35px;
-  margin-right: 25px;
+  margin-left: 36px;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 0;
   padding: 0;
 }
 
 .copyright__logo-image {
-  background: url(../img/logo-htmlacademy.svg) no-repeat #fafafa 50% 50%;
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0;
+  fill: $beaty-color;
+  &:hover {
+    fill: #46c1ae;
+  }
+  &:active {
+    fill: #46c1ae;
+    fill-opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright__logo {
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
+    padding-top: 7px;
   }
 }

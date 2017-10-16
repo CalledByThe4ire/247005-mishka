@@ -16,13 +16,21 @@
   font-weight: bold;
   cursor: pointer;
   &:focus {
-    border: 2px solid $beaty-color;
     outline: none;
+  }
+  &:active {
+    border: 2px solid $beaty-color;
+  }
+  &:hover {
+    border: 2px solid #c7c7c7;
   }
 }
 
 @media (min-width: $tablet-width) {
   .size-list__item {
     width: 110px;
+    &:active {
+    border: 2px solid $beaty-color;
+    }
   }
 }

@@ -1,19 +1,19 @@
 .make-order {
-  margin-top: 30px;
+  margin-top: 22px;
   margin-bottom: 55px;
-}
-
-.make-order__form {
-  margin-top: 30px;
 }
 
 .make-order__description {
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
 }
 
-
 @media (min-width: $tablet-width) {
+  .make-order {
+    margin-top: 60px;
+    margin-bottom: 31px;
+  }
   .make-order__description {
     font-size: 17px;
     line-height: 30px;
@@ -32,6 +32,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .make-order {
+    margin-top: 110px;
+  }
+  .make-order__description {
+    margin-bottom: 10px;
+  }
   .make-order-content__wrapper {
     margin: 0 auto;
     width: 700px;
