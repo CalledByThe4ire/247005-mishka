@@ -21,7 +21,7 @@
     outline: none;
   }
 }
-.main-nav__toggle .main-nav__toggle--part {
+.main-nav__toggle .main-nav__toggle-part {
   height: 2px;
   width: 100%;
   background: #000000;
@@ -37,7 +37,7 @@
   }
   &:nth-child(2) {
     top: 6px;
-    height: 2.5px;
+    height: 2px;
     transform-origin: left center;
   }
   &:last-child {
@@ -49,7 +49,7 @@
   height: 21px;
   width: 20px;
 }
-.main-nav__toggle--open .main-nav__toggle--part {
+.main-nav__toggle--open .main-nav__toggle-part {
   width: 100%;
   &:first-child {
     transform: rotate(45deg);
@@ -118,6 +118,7 @@
     width: auto;
     height: auto;
     padding: 0;
+    height: 100%;
   }
   .main-nav__list--site-nav {
     width: 309px;

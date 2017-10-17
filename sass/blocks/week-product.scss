@@ -83,6 +83,8 @@
     position: absolute;
     bottom: 0;
     padding: 0;
+    left: 0;
+    margin-left: 50px;
   }
 
   .week-product__product-description {
@@ -108,7 +110,7 @@
     width: 290px;
     margin-left: 0;
     text-align: center;
-    margin-top: 35px;
+    margin-top: 36px;
   }
 }
 
@@ -127,16 +129,17 @@
   }
 
   .week-product__characteristics {
-    margin-top: 110px;
-    margin-right: 5px;
+    margin-top: 108px;
+    margin-left: 54px;
   }
 
   .week-product__caption {
     position: absolute;
-    margin-left: 170px;
+    margin-left: 220px;
     margin-top: 55px;
     font-size: 53px;
     line-height: 57px;
+    left: 0;
   }
   .week-product__image-wrapper {
     margin: 0;
@@ -146,17 +149,18 @@
     margin-right: 0;
     background-color: $beaty-color;
     height: 636px;
+    margin-left: auto;
   }
 
   .week-product__promo-name {
     order: -1;
     width: 80px;
     text-align: center;
-    margin-left: 40px;
+    margin-left: 43px;
     margin-top: 65px;
     margin-right: 0;
   }
   .week-product__buy {
-    margin-left: 175px;
+    margin-left: 225px;
   }
 }

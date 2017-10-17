@@ -12,6 +12,7 @@
   position: relative;
   margin-top: 25px;
   margin-bottom: 10px;
+  width: 100%;
   &::after {
     position: absolute;
     top: 50%;
@@ -258,6 +259,7 @@
 
   .form__part-title {
     margin-top: 0;
+    width: auto;
     &::after {
       display: none;
     }
@@ -351,9 +353,14 @@
   .form-part--checkboxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; // переопределить в десктопе
     margin-left: 200px;
     width: 400px;
+  }
+  .form__part-checkbox-label {
+    &:nth-of-type(1), &:nth-of-type(3) {
+      margin-right: auto;
+    }
   }
   .form__part-wrapper--text-inputs {
     display: flex;
@@ -405,12 +412,14 @@
     margin: 0;
     padding: 5px 55px 15px 15px;
     box-sizing: border-box;
-    background-color: inherit;
+    margin-left: auto;
+    background-color: #f1f1f1;
     @include tablet-placeholder;
   }
   .form__part--phone-icon {
     right: 75px;
     top: 60px;
+    position: absolute;
   }
   .form__part-title--email {
     margin-top: 10px;
@@ -427,8 +436,9 @@
     width: 500px;
     margin: 0;
     padding: 5px 55px 15px 15px;
+    margin-left: auto;
     box-sizing: border-box;
-    background-color: inherit;
+    background-color: #f1f1f1;
     @include tablet-placeholder;
   }
   .form__part--mail-icon {
@@ -509,6 +519,11 @@
   .form__part-checkbox-label {
     width: 260px;
     margin-bottom: 60px;
+  }
+    .form__part-checkbox-label {
+    &:nth-of-type(1), &:nth-of-type(3) {
+      margin-right: 0;
+    }
   }
 
   .form__part-wrapper--text-inputs {

@@ -23,9 +23,9 @@
         </a>
         <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="main-nav__toggle-part"></span>
+            <span class="main-nav__toggle-part"></span>
+            <span class="main-nav__toggle-part"></span>
           </button>
           <div class="main-nav__dropdown">
             <ul class="main-nav__list--site-nav  site-list">
@@ -46,14 +46,14 @@
               <li class="site-list__item site-list__item--search">
                 <a class="site-list__item-link" href="#">
                   <svg class="site-list__item--search-icon" width="20" height="19">
-                    <use xlink:href="#icon-search">
+                    <use xlink:href="#icon-search"/>
                   </svg>Поиск по&nbsp;сайту
                 </a>
               </li>
               <li class="site-list__item site-list__item--basket">
                 <a class="site-list__item-link" href="#">
                   <svg class="site-list__item--basket-icon" width="20" height="19">
-                    <use xlink:href="#icon-cart">
+                    <use xlink:href="#icon-cart"/>
                   </svg>Корзина: пока пуста
                 </a>
               </li>
@@ -135,7 +135,7 @@
                 <input class="form__part-tel" id="phone-number" type="tel" placeholder="+7 XXX XX XX*"
                 name="phone-input">
                 <svg class="form__part--phone-icon" width="25" height="24">
-                  <use xlink:href="#icon-phone">
+                  <use xlink:href="#icon-phone"/>
                 </svg>
               </div>
             </fieldset>
@@ -147,7 +147,7 @@
                 <input class="form__part-mail" type="email" id="mail" placeholder="Ваш Email*"
                 name="email-input">
                 <svg class="form__part--mail-icon" width="32" height="21">
-                  <use xlink:href="#icon-mail">
+                  <use xlink:href="#icon-mail"/>
                 </svg>
               </div>
             </fieldset>
@@ -172,7 +172,7 @@
       <div class="main-block__wrapper page-footer__wrapper">
         <a href="index.html" class="page-footer__logo">
           <svg class="page-footer__logo--icon" width="102" height="34">
-            <use xlink:href="#icon-logo-footer">
+            <use xlink:href="#icon-logo-footer"/>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -180,21 +180,21 @@
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в инстаграме">
                 <svg class="social__link--instagram" width="22" height="21">
-                  <use xlink:href="#icon-insta">
+                  <use xlink:href="#icon-insta"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в фейсбуке">
                 <svg class="social__link--facebook" width="15" height="29">
-                  <use xlink:href="#icon-fb">
+                  <use xlink:href="#icon-fb"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в твитере">
                 <svg class="social__link--twitter" width="24" height="20">
-                  <use xlink:href="#icon-twitter">
+                  <use xlink:href="#icon-twitter"/>
                 </svg>
               </a>
             </li>
@@ -204,12 +204,13 @@
           <p class="copyright__logo">Разработано</p>
           <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="HTML Academy">
             <svg class="copyright__logo-image" width="27" height="34">
-              <use xlink:href="#icon-htmlacademy">
+              <use xlink:href="#icon-htmlacademy"/>
             </svg>
           </a>
         </div>
       </div>
     </footer>
+    <script src="js/picturefill.min.js" async defer></script>
     <script src="js/script.min.js" async defer></script>
   </body>
 </html>
