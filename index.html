@@ -87,22 +87,24 @@
         <div class="main-block__wrapper week-product__wrapper wave-line__desktop">
           <h2 class="main-block__caption week-product__caption">Вязаные корзинки</h2>
           <b class="week-product__promo-name">Товар недели</b>
-          <dl class="week-product__characteristics characteristics-list">
+          <div class="week-product__product-info">
             <p class="week-product__product-description">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести
             расцветках, и&nbsp;трех размерах.</p>
-            <div class="characteristics-list__item">
-              <dt class="characteristics-list__item-param characteristics-list__item-param--type">Цвет:</dt>
-              <dd class="characteristics-list__item-param">&laquo;Тиффани&raquo;/cерый</dd>
-            </div>
-            <div class="characteristics-list__item">
-              <dt class="characteristics-list__item-param characteristics-list__item-param--type">Диаметр:</dt>
-              <dd class="characteristics-list__item-param">25&nbsp;см</dd>
-            </div>
-            <div class="characteristics-list__item">
-              <dt class="characteristics-list__item-param characteristics-list__item-param--type">Высота:</dt>
-              <dd class="characteristics-list__item-param">15&nbsp;см</dd>
-            </div>
-          </dl>
+            <dl class="week-product__characteristics characteristics-list">
+              <div class="characteristics-list__item">
+                <dt class="characteristics-list__item-param characteristics-list__item-param--type">Цвет:</dt>
+                <dd class="characteristics-list__item-param">&laquo;Тиффани&raquo;/cерый</dd>
+              </div>
+              <div class="characteristics-list__item">
+                <dt class="characteristics-list__item-param characteristics-list__item-param--type">Диаметр:</dt>
+                <dd class="characteristics-list__item-param">25&nbsp;см</dd>
+              </div>
+              <div class="characteristics-list__item">
+                <dt class="characteristics-list__item-param characteristics-list__item-param--type">Высота:</dt>
+                <dd class="characteristics-list__item-param">15&nbsp;см</dd>
+              </div>
+            </dl>
+          </div>
           <figure class="week-product__image-wrapper">
             <picture>
               <source type="image/webp" media="(min-width: 1250px)"
@@ -242,7 +244,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link" arial-label="Мы в твитере">
+              <a href="#" class="social__link" aria-label="Мы в твитере">
                 <svg class="social__link-icon" width="24" height="20">
                   <use xlink:href="#icon-twitter"/>
                 </svg>
@@ -261,7 +263,7 @@
       </div>
     </footer>
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-dialog__content">
         <h2 class="modal-dialog__caption">Добавить в&nbsp;корзину</h2>
         <span class="modal-dialog__size-choice">Выберите размер:</span>
         <div class="modal-dialog__size-list size-list">

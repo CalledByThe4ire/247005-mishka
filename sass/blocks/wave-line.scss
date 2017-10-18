@@ -12,7 +12,6 @@
     background-size: auto 8px;
   }
 }
-
 @media(min-width: $tablet-width) {
   .wave-line {
     &::after {
@@ -23,7 +22,6 @@
     }
   }
 }
-
 @media (min-width: $desktop-width) {
   .wave-line {
     &::after {

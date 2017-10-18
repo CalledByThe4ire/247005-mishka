@@ -2,7 +2,6 @@
   background-color: #f9f9f9;
   padding: 0;
 }
-
 .products-navigator__button {
   font-size: 19px;
   line-height: 24px;
@@ -30,7 +29,6 @@
   right: 25px;
   top: -5px;
 }
-
 .products-navigator__button-title {
   width: 260px;
   padding: 0 30px 0 30px;
@@ -38,7 +36,6 @@
   display: block;
   position: relative;
 }
-
 @media (min-width: $tablet-width) {
   .products-navigator__wrapper {
     display: flex;
@@ -47,7 +44,6 @@
     margin: 0 auto;
     justify-content: space-between;
   }
-
   .products-navigator__button {
     width: 264px;
     padding: 26px 35px 45px 35px;
@@ -70,13 +66,12 @@
   .products-navigator__button-int-icon {
     right: 0px;
     top: 2px;
-}
+  }
   .products-navigator__buttons-toy-icon {
     right: 0px;
     top: 3px;
+  }
 }
-}
-
 @media (min-width: $desktop-width) {
   .products-navigator__wrapper {
     width: 1050px;

@@ -2,25 +2,20 @@
   margin: 0;
   padding: 0;
 }
-
 .details-parts__content {
   margin: 0;
   padding: 0;
 }
-
 .details-parts__item {
   display: flex;
   margin-bottom: 30px;
 }
-
 .details-parts__type {
   margin-right: 29px;
 }
-
 .details-parts__content--address {
   padding-right: 35px;
 }
-
 .details-parts__content .details-parts__email {
   text-decoration: none;
   font-size: 15px;
@@ -36,18 +31,14 @@
     opacity: 0.3;
   }
 }
-
-
 @media (min-width: $tablet-width) {
   .details-parts__item {
     width: 334px;
     align-items: flex-start;
   }
-
   .details-parts__content .details-parts__email {
     font-size: 17px;
   }
-
   .details-parts__content--address {
     padding-right: 10px;
   }
@@ -55,7 +46,6 @@
     margin-right: 25px;
   }
 }
-
 @media (min-width: $desktop-width) {
   .details-parts__item {
     width: 300px;

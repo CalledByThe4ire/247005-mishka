@@ -11,75 +11,70 @@
   margin: 0 auto;
   text-align: center
 }
-
 @mixin mobile-placeholder {
   &::-webkit-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #d2d2d2;
- }
+}
   &:-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #d2d2d2;
- }
+}
   &::-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #d2d2d2;
- }
+}
   &:-ms-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #d2d2d2;
- }
+  }
 }
-
 @mixin tablet-placeholder {
   &::-webkit-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 19px;
     line-height: 18px;
     color: #d2d2d2;
- }
+}
   &:-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 19px;
     line-height: 18px;
     color: #d2d2d2;
- }
+}
   &::-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 19px;
     line-height: 18px;
     color: #d2d2d2;
- }
+}
   &:-ms-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 19px;
     line-height: 18px;
     color: #d2d2d2;
- }
+  }
 }
-
 @mixin mobile-inputs {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #444444;
 }
-
 @mixin tablet-inputs {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 19px;
   line-height: 18px;
   color: #444444;
 }
-
 @mixin visuallyhidden {
   position: absolute;
   width: 1px;
@@ -92,7 +87,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 @mixin benefits-icon {
   fill: $beaty-color;
   position: absolute;

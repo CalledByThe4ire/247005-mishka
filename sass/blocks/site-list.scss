@@ -52,8 +52,6 @@
   left: -28px;
   top: 30px;
 }
-
-
 @media (min-width: $tablet-width) {
   .site-list--site-nav {
     width: 309px;
@@ -79,7 +77,6 @@
     z-index: 1;
     border-bottom: none;
   }
-
   .site-list__item--basket {
     flex-grow: 1;
     display: flex;
@@ -92,7 +89,6 @@
     margin: 0;
     width: auto;
   }
-
   .site-list--site-nav .site-list__item-link {
     font-size: 15px;
     padding-right: 5px;
@@ -103,7 +99,6 @@
     height: 30px;
     margin: auto;
   }
-
   .site-list__item--basket .site-list__item-link {
     margin: auto;
     margin-right: 0;
@@ -114,15 +109,12 @@
   .site-list__search-icon {
     left: 5px;
     top: 5px;
-
   }
   .site-list__basket-icon {
     left: -8px;
     top: 5px;
   }
 }
-
-
 @media (min-width: $desktop-width) {
   .site-list--site-nav {
     flex-wrap: wrap;
@@ -161,4 +153,3 @@
     text-align: left;
   }
 }
-

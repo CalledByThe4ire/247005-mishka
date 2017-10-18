@@ -41,7 +41,6 @@
     fill-opacity: 0.3;
   }
 }
-
 @media (min-width: $tablet-width) {
   .slider {
     display: flex;
@@ -51,7 +50,6 @@
   .slider__slide-list {
     order: 2;
   }
-
   .slider__toggles {
     order: 3;
     width: 175px;
@@ -63,8 +61,6 @@
     border: none;
   }
 }
-
-
 @media (min-width: $desktop-width) {
   .slider {
     padding-top: 80px;

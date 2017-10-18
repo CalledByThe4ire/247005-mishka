@@ -1,0 +1,132 @@
+.catalog-item {
+  margin-bottom: 30px;
+  outline: 1px solid #ededed;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+.catalog-item__link {
+  text-decoration: none;
+}
+.catalog-item__name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 28px;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.catalog-item__details {
+  font-size: 13px;
+  line-height: 30px;
+  margin: 0;
+  margin-left: 28px;
+}
+.catalog-item__wrapper {
+  border-top: 1px solid #ececec;
+  margin: 18px 28px 0 28px;
+  display: flex;
+  justify-content: space-between;
+}
+.catalog-item__price {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 25px 0 25px 0;
+}
+.catalog-item__buy {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  position: relative;
+}
+.catalog-item__basket-icon {
+  fill: #d3d2d2;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  &:hover {
+    fill: $beaty-color;
+  }
+  &:active {
+    fill: $beaty-color;
+    fill-opacity: 0.6;
+  }
+}
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    margin-bottom: 54px;
+  }
+  .catalog-item__name {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 26px;
+  }
+  .catalog-item__details {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 2px;
+  }
+  .catalog-item__price {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .catalog-item__image {
+    width: 334px;
+    height: 334px;
+    border: none;
+    display: block;
+  }
+  .catalog-item__description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .catalog-item__wrapper {
+    margin-top: auto;
+    margin: auto 30px 0 30px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    width: 316px;
+  }
+  .catalog-item__name {
+    margin-top: 24px;
+  }
+  .catalog-item__details {
+    margin-top: 3px;
+  }
+  .catalog-item__img-link {
+    height: auto;
+  }
+  .catalog-item__image {
+    width: 316px;
+    height: 462px;
+  }
+  .catalog-item__details {
+    margin-bottom: 10px;
+  }
+  .catalog-item__price {
+    margin-left: -2px;
+  }
+}

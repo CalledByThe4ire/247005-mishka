@@ -2,7 +2,6 @@
   border-bottom: 1px solid #ececec;
   height: 80px;
 }
-
 .page-header__content {
   height: 100%;
   display: flex;
@@ -10,7 +9,6 @@
   flex-direction: column;
   margin: auto;
 }
-
 .page-header__logo {
   text-align: center;
   width: 86px;
@@ -26,7 +24,6 @@
     opacity: 0.3;
   }
 }
-
 @media (min-width: $tablet-width) {
   .page-header {
     height: 90px;
@@ -45,11 +42,9 @@
 
   .page-header__content {
     width: 668px;
-    // padding: 0 50px 0 50px;
     flex-direction: row;
   }
 }
-
 @media (min-width: $desktop-width) {
   .page-header__content {
     width: 1050px;

@@ -34,10 +34,10 @@ gulp.task("style", function() {
 
 gulp.task("minify-js", function(cb) {
   pump([
-       gulp.src("js/*.js"),
-       uglify(),
-       rename("script.min.js"),
-       gulp.dest("build/js")
+        gulp.src("js/*.js"),
+        uglify(),
+        rename("script.min.js"),
+        gulp.dest("build/js")
     ],
     cb
   );

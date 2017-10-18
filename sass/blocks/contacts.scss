@@ -5,12 +5,10 @@
 .contacts__caption {
   font-size: 18px;
 }
-
 .contacts__details {
   margin: 25px 0 39px 0;
   line-height: 30px;
 }
-
 .contacts__map {
   background: url(../img/map-mobile@1x.jpg) no-repeat #f5ead8 center;
   width: 100%;
@@ -21,7 +19,6 @@
     background-size: 322px auto;
   }
 }
-
 .contacts__contact-btn {
   width: 260px;
   display: block;
@@ -31,7 +28,6 @@
 .contacts__flag-icon {
   display: none;
 }
-
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 7px;
@@ -53,7 +49,6 @@
     line-height: 50px;
     margin-bottom: 48px;
   }
-
   .contacts__details {
     display: flex;
     font-size: 17px;
@@ -72,8 +67,6 @@
     top: -16px;
   }
 }
-
-
 @media (min-width: $desktop-width) {
   .contacts__desktop-wrapper {
     width: 1050px;
@@ -90,7 +83,6 @@
     margin-left: 170px;
     margin-top: 70px;
   }
-
   .contacts__caption {
     font-size: 53px;
     line-height: 57px;
