@@ -1,0 +1,27 @@
+@media(min-width: $tablet-width) {
+  .wave-fill-line {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      width: 100%;
+      height: 25px;
+      background-size: auto 25px;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      background-position: 10% 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wave-fill-line {
+    &::after {
+      bottom: -7px;
+      width: 100%;
+      height: 35px;
+      background-size: auto 35px;
+    }
+  }
+}

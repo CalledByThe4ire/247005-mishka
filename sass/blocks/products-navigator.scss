@@ -18,13 +18,13 @@
     background-color: #56c3b2;
   }
 }
-.products-navigator__button--int-icon {
+.products-navigator__button-int-icon {
   position: absolute;
   right: 35px;
   top: -5px;
   fill: #3bb09d;
 }
-.products-navigator__button--toy-icon {
+.products-navigator__button-toy-icon {
   position: absolute;
   fill: #35a999;
   right: 25px;
@@ -67,11 +67,11 @@
     margin: 0;
     display: block;
   }
-  .products-navigator__button--int-icon {
+  .products-navigator__button-int-icon {
     right: 0px;
     top: 2px;
 }
-  .products-navigator__button--toy-icon {
+  .products-navigator__buttons-toy-icon {
     right: 0px;
     top: 3px;
 }

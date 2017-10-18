@@ -8,25 +8,7 @@
   align-items: center;
 }
 
-.social__link--instagram {
-  &:hover {
-    fill: $beaty-color;
-  }
-  &:active {
-    fill: $beaty-color;
-    fill-opacity: 0.6;
-  }
-}
-.social__link--facebook {
-  &:hover {
-    fill: $beaty-color;
-  }
-  &:active {
-    fill: $beaty-color;
-    fill-opacity: 0.6;
-  }
-}
-.social__link--twitter {
+.social__link-icon {
   &:hover {
     fill: $beaty-color;
   }

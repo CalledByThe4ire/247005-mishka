@@ -28,7 +28,7 @@
             <span class="main-nav__toggle-part"></span>
           </button>
           <div class="main-nav__dropdown">
-            <ul class="main-nav__list--site-nav  site-list">
+            <ul class="main-nav__list site-list site-list--site-nav">
               <li class="site-list__item">
                 <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
               </li>
@@ -42,17 +42,17 @@
                 <a class="site-list__item-link site-list__item-link--sale" href="#">Распродажа</a>
               </li>
             </ul>
-            <ul class="main-nav__list--service-nav site-list">
+            <ul class="main-nav__list site-list site-list--service-nav">
               <li class="site-list__item site-list__item--search">
                 <a class="site-list__item-link" href="#">
-                  <svg class="site-list__item--search-icon" width="20" height="19">
+                  <svg class="site-list__search-icon" width="20" height="19">
                     <use xlink:href="#icon-search"/>
                   </svg>Поиск по&nbsp;сайту
                 </a>
               </li>
               <li class="site-list__item site-list__item--basket">
                 <a class="site-list__item-link" href="#">
-                  <svg class="site-list__item--basket-icon" width="20" height="19">
+                  <svg class="site-list__basket-icon" width="20" height="19">
                     <use xlink:href="#icon-cart"/>
                   </svg>Корзина: пока пуста
                 </a>
@@ -64,12 +64,12 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__caption page-main__caption--bgc wave-line--fill">
+      <h1 class="page-main__caption page-main__caption--bgc wave-fill-line">
         <span class="main-block__wrapper">Вязание на&nbsp;заказ</span>
       </h1>
       <section class="make-order">
         <div class="main-block__wrapper make-order__wrapper">
-          <div class="make-order-content__wrapper">
+          <div class="make-order__content-wrapper">
             <p class="make-order__description">Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания!
             Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали.</p>
           </div>
@@ -77,7 +77,7 @@
             <fieldset class="form__part">
               <div class="form__part-wrapper form__part-wrapper--radios">
                 <legend class="form__part-title">Тип</legend>
-                <div class="form-part--radios">
+                <div class="form__part-radios">
                   <input class="form__part-radio" type="radio" id="accessories" name="radio-input" value="access">
                   <label class="form__part-radio-label" for="accessories">Аксессуар для интерьера</label>
                   <input class="form__part-radio" type="radio" id="toy" name="radio-input" value="toys">
@@ -88,7 +88,7 @@
             <fieldset class="form__part form__part--bg">
               <div class="form__part-wrapper form__part-wrapper--checkboxes">
                 <legend class="form__part-title form__part-title--checkboxes">Цвет</legend>
-                <div class="form-part--checkboxes">
+                <div class="form__part-checkboxes">
                   <input class="form__part-checkbox" type="checkbox" id="white" name="color[]"
                   value="white-color">
                   <label class="form__part-checkbox-label" for="white">Белый</label>
@@ -113,7 +113,7 @@
             <fieldset class="form__part form__part--text">
               <div class="form__part-wrapper form__part-wrapper--text-inputs">
                 <legend class="form__part-title">ФИО</legend>
-                <div class="form-part__text-inputs">
+                <div class="form__part-text-inputs">
                   <label class="form__part-text-label" for="name">Имя:
                     <input class="form__part-text" type="text" id="name" placeholder="Введите ваше имя*" name="name-input">
                   </label>
@@ -134,7 +134,7 @@
                 </legend>
                 <input class="form__part-tel" id="phone-number" type="tel" placeholder="+7 XXX XX XX*"
                 name="phone-input">
-                <svg class="form__part--phone-icon" width="25" height="24">
+                <svg class="form__part-phone-icon" width="25" height="24">
                   <use xlink:href="#icon-phone"/>
                 </svg>
               </div>
@@ -146,7 +146,7 @@
                 </legend>
                 <input class="form__part-mail" type="email" id="mail" placeholder="Ваш Email*"
                 name="email-input">
-                <svg class="form__part--mail-icon" width="32" height="21">
+                <svg class="form__part-mail-icon" width="32" height="21">
                   <use xlink:href="#icon-mail"/>
                 </svg>
               </div>
@@ -160,7 +160,7 @@
                 name="comment-input" id="comment"></textarea>
               </div>
             </fieldset>
-            <div class=" form__submit--wrapper">
+            <div class="form__submit-wrapper">
               <p class=" form__comment">*Поля обязательны для заполнения</p>
               <button class="form__button  button" type="submit">Отправить заказ</button>
             </div>
@@ -171,7 +171,7 @@
     <footer class="page-footer">
       <div class="main-block__wrapper page-footer__wrapper">
         <a href="index.html" class="page-footer__logo">
-          <svg class="page-footer__logo--icon" width="102" height="34">
+          <svg class="page-footer__logo-icon" width="102" height="34">
             <use xlink:href="#icon-logo-footer"/>
           </svg>
         </a>
@@ -179,21 +179,21 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в инстаграме">
-                <svg class="social__link--instagram" width="22" height="21">
+                <svg class="social__link-icon" width="22" height="21">
                   <use xlink:href="#icon-insta"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в фейсбуке">
-                <svg class="social__link--facebook" width="15" height="29">
+                <svg class="social__link-icon" width="15" height="29">
                   <use xlink:href="#icon-fb"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в твитере">
-                <svg class="social__link--twitter" width="24" height="20">
+                <svg class="social__link-icon" width="24" height="20">
                   <use xlink:href="#icon-twitter"/>
                 </svg>
               </a>

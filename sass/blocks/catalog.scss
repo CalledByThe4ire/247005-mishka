@@ -15,7 +15,7 @@
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
-.catalog-item_link {
+.catalog-item__link {
   text-decoration: none;
 }
 
@@ -140,7 +140,7 @@
   .catalog-item__details {
     margin-top: 3px;
   }
-  .catalog-image__link {
+  .catalog__item-img-link {
     height: auto;
   }
   .catalog-item__image {

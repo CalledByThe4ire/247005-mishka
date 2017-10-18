@@ -150,7 +150,7 @@
   margin-bottom: 7px;
   position: relative;
 }
-.form__part--phone-icon {
+.form__part-phone-icon {
   position: absolute;
   fill: #cccccc;
   right: 5px;
@@ -173,9 +173,9 @@
     border-bottom: 2px solid $beaty-color;
   }
 }
-.form__part-tel:hover + .form__part--phone-icon,
-.form__part-tel:active + .form__part--phone-icon,
-.form__part-tel:focus + .form__part--phone-icon {
+.form__part-tel:hover + .form__part-phone-icon,
+.form__part-tel:active + .form__part-phone-icon,
+.form__part-tel:focus + .form__part-phone-icon {
   fill: $beaty-color;
 }
 
@@ -183,7 +183,7 @@
   margin-bottom: 7px;
   position: relative;
 }
-.form__part--mail-icon {
+.form__part-mail-icon {
   position: absolute;
   fill: #cccccc;
   right: 5px;
@@ -207,9 +207,9 @@
     }
 }
 
-.form__part-mail:hover + .form__part--mail-icon,
-.form__part-mail:active + .form__part--mail-icon,
-.form__part-mail:focus + .form__part--mail-icon {
+.form__part-mail:hover + .form__part-mail-icon,
+.form__part-mail:active + .form__part-mail-icon,
+.form__part-mail:focus + .form__part-mail-icon {
   fill: $beaty-color;
 }
 
@@ -275,7 +275,7 @@
     padding-bottom: 70px;
   }
 
-  .form-part--radios {
+  .form__part-radios {
     margin-left: 208px;
   }
 
@@ -350,10 +350,10 @@
     padding-bottom: 69px;
     padding-top: 65px;
   }
-  .form-part--checkboxes {
+  .form__part-checkboxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; // переопределить в десктопе
+    justify-content: space-between;
     margin-left: 200px;
     width: 400px;
   }
@@ -367,7 +367,7 @@
     padding-top: 61px;
     padding-bottom: 49px;
   }
-  .form-part__text-inputs {
+  .form__part-text-inputs {
     margin-left: 123px;
     flex-grow: 1;
   }
@@ -416,7 +416,7 @@
     background-color: #f1f1f1;
     @include tablet-placeholder;
   }
-  .form__part--phone-icon {
+  .form__part-phone-icon {
     right: 75px;
     top: 60px;
     position: absolute;
@@ -441,7 +441,7 @@
     background-color: #f1f1f1;
     @include tablet-placeholder;
   }
-  .form__part--mail-icon {
+  .form__part-mail-icon {
     right: 70px;
     top: 35px;
     width: 35px;
@@ -465,7 +465,7 @@
     @include tablet-placeholder;
   }
 
-  .form__submit--wrapper {
+  .form__submit-wrapper {
     margin: 0 auto;
     width: 668px;
     padding: 0 50px 0 50px;
@@ -494,7 +494,7 @@
     padding-bottom: 69px;
   }
 
-  .form-part--radios {
+  .form__part-radios {
     margin: 0;
     margin-left: 152px;
   }
@@ -504,7 +504,7 @@
     padding-bottom: 7px;
   }
 
-  .form-part--checkboxes {
+  .form__part-checkboxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -531,7 +531,7 @@
     padding-bottom: 48px;
   }
 
-  .form-part__text-inputs {
+  .form__part-text-inputs {
     margin: 0;
     margin-left: 69px;
   }
@@ -547,7 +547,7 @@
     padding-top: 55px;
     padding-bottom: 0px;
   }
-  .form__part--phone-icon {
+  .form__part-phone-icon {
     right: 235px;
     top: 60px;
   }
@@ -560,7 +560,7 @@
     padding-top: 30px;
     padding-bottom: 48px;
   }
-  .form__part--mail-icon {
+  .form__part-mail-icon {
     right: 230px;
     top: 35px;
   }
@@ -580,7 +580,7 @@
     width: 700px;
     min-height: 140px;
   }
-  .form__submit--wrapper {
+  .form__submit-wrapper {
     margin: 0 auto;
     width: 700px;
     padding: 0;

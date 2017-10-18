@@ -28,7 +28,7 @@
             <span class="main-nav__toggle-part"></span>
           </button>
           <div class="main-nav__dropdown">
-            <ul class="main-nav__list--site-nav site-list">
+            <ul class="main-nav__list site-list site-list--site-nav">
               <li class="site-list__item">
                 <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
               </li>
@@ -42,16 +42,16 @@
                 <a class="site-list__item-link site-list__item-link--sale" href="#">Распродажа</a>
               </li>
             </ul>
-            <ul class="main-nav__list--service-nav site-list">
+            <ul class="main-nav__list site-list site-list--service-nav">
               <li class="site-list__item site-list__item--search">
                 <a class="site-list__item-link" href="#">
-                  <svg class="site-list__item--search-icon" width="20" height="19"><use xlink:href="#icon-search"/>
+                  <svg class="site-list__search-icon" width="20" height="19"><use xlink:href="#icon-search"/>
                   </svg>Поиск по&nbsp;сайту
                 </a>
               </li>
               <li class="site-list__item site-list__item--basket">
                 <a class="site-list__item-link" href="#">
-                  <svg class="site-list__item--basket-icon" width="21" height="18"><use xlink:href="#icon-cart"/>
+                  <svg class="site-list__basket-icon" width="21" height="18"><use xlink:href="#icon-cart"/>
                   </svg>Корзина: пока пуста
                 </a>
               </li>
@@ -65,18 +65,18 @@
       <h1 class="page-main__caption page-main__caption--bg">
         <span class="main-block__wrapper">Милые штуки ручной<br>работы для дома</span>
       </h1>
-      <section class="products-navigator wave-line--fill">
+      <section class="products-navigator wave-fill-line">
         <div class="products-navigator__wrapper">
           <a class="products-navigator__button" href="#">
             <span class="products-navigator__button-title">Предметы<br>интерьера
-              <svg class="products-navigator__button--int-icon" width="41" height="62">
+              <svg class="products-navigator__button-int-icon" width="41" height="62">
                 <use xlink:href="#icon-interior"/>
               </svg>
             </span>
           </a>
           <a class="products-navigator__button" href="#">
             <span class="products-navigator__button-title">Детские<br>игрушки
-              <svg class="products-navigator__button--toy-icon" width="61" height="61">
+              <svg class="products-navigator__button-toy-icon" width="61" height="61">
                 <use xlink:href="#icon-toy"/>
               </svg>
             </span>
@@ -126,33 +126,33 @@
           <h2 class="main-block__caption about-us__caption">Коротко о&nbsp;нас:</h2>
           <ul class="about-us__list benefits-list">
             <li class="benefits-list__item">Экологически<br>чистые материалы
-              <svg class="benefits-list__item--icon-eco" width="32" height="38">
+              <svg class="benefits-list__icon benefits-list__icon--eco" width="32" height="38">
                 <use xlink:href="#icon-feature-flower"/>
               </svg>
             </li>
             <li class="benefits-list__item">Скандинавский стиль по&nbsp;российской цене
-              <svg class="benefits-list__item--icon-price" width="47" height="27">
+              <svg class="benefits-list__icon benefits-list__icon--price" width="47" height="27">
                 <use xlink:href="#icon-feature-money"/>
               </svg>
             </li>
             <li class="benefits-list__item">Увеличивает лайки на&nbsp;фотографиях
-              <svg class="benefits-list__item--icon-like" width="34" height="27">
+              <svg class="benefits-list__icon benefits-list__icon--like" width="34" height="27">
                 <use xlink:href="#icon-feature-heart"/>
               </svg>
             </li>
             <li class="benefits-list__item">Связано вручную с<br>любовью
             и&nbsp;умилением
-              <svg class="benefits-list__item--icon-hand" width="34" height="34">
+              <svg class="benefits-list__icon benefits-list__icon--hand" width="34" height="34">
                 <use xlink:href="#icon-feature-ball"/>
               </svg>
             </li>
             <li class="benefits-list__item">Поддержка отечественного производителя
-              <svg class="benefits-list__item--icon-sup" width="55" height="23">
+              <svg class="benefits-list__icon benefits-list__icon--sup" width="55" height="23">
                 <use xlink:href="#icon-feature-rocket"/>
               </svg>
             </li>
             <li class="benefits-list__item">Поставляется в<br>подарочной упаковке
-              <svg class="benefits-list__item--icon-pack" width="33" height="32">
+              <svg class="benefits-list__icon benefits-list__icon--pack" width="33" height="32">
                 <use xlink:href="#icon-feature-gift"/>
               </svg>
             </li>
@@ -202,7 +202,7 @@
               <div class="details-parts__item">
                 <dt class="details-parts__type">e-mail:</dt>
                 <dd class="details-parts__content">
-                  <a class="details-parts__content--email"
+                  <a class="details-parts__email"
                   href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
                 </dd>
               </div>
@@ -221,7 +221,7 @@
     <footer class="page-footer">
       <div class="main-block__wrapper page-footer__wrapper">
         <a class="page-footer__logo">
-          <svg class="page-footer__logo--icon" width="102" height="34">
+          <svg class="page-footer__logo-icon" width="102" height="34">
             <use xlink:href="#icon-logo-footer"/>
           </svg>
         </a>
@@ -229,21 +229,21 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в инстаграме">
-                <svg class="social__link--instagram" width="22" height="21">
+                <svg class="social__link-icon" width="22" height="21">
                   <use xlink:href="#icon-insta"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в фейсбуке">
-                <svg class="social__link--facebook" width="15" height="29">
+                <svg class="social__link-icon" width="15" height="29">
                   <use xlink:href="#icon-fb"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link" arial-label="Мы в твитере">
-                <svg class="social__link--twitter" width="24" height="20">
+                <svg class="social__link-icon" width="24" height="20">
                   <use xlink:href="#icon-twitter"/>
                 </svg>
               </a>
@@ -274,7 +274,7 @@
     </div>
     <div class="modal-overlay"></div>
     <script src="js/picturefill.min.js" async defer></script>
-    <script src="js/script.js" async defer></script>
+    <script src="js/script.min.js" async defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHIFHg91wnChC8qGQtgjFXbhiu6fAV8K8&callback=initMap"
     async defer></script>
   </body>
