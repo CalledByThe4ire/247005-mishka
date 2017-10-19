@@ -10,6 +10,7 @@
   color: #ffffff;
   text-decoration: none;
   display: block;
+  overflow: hidden;
   &:first-child {
     background-color: $beaty-color;
   }
@@ -49,6 +50,7 @@
     padding: 26px 35px 45px 35px;
     font-size: 20px;
     line-height: 30px;
+    // position: relative;
     &:hover {
       transform: translateY(-5px);
       transition: 0.2s;

@@ -30,40 +30,55 @@
   display: block;
   position: absolute;
   transform: rotate(0deg);
-  &:first-child {
-    top: 0;
-    transform-origin: left center;
-  }
-  &:nth-child(2) {
-    top: 6px;
+  top: 6px;
+  height: 2px;
+  transform-origin: left center;
+  &::before {
+    content: "";
     height: 2px;
+    width: 100%;
+    background: #000000;
+    opacity: 1;
+    left: 0;
+    position: absolute;
+    transition: 0.25s ease-in-out;
+    display: block;
+    transform: rotate(0deg);
+    top: -6px;
     transform-origin: left center;
   }
-  &:last-child {
-    top: 12px;
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #000000;
+    opacity: 1;
+    left: 0;
+    transition: 0.25s ease-in-out;
+    display: block;
+    position: absolute;
+    transform: rotate(0deg);
+    top: 6px;
     transform-origin: left center;
-    }
+  }
 }
 .main-nav__toggle--open {
   height: 21px;
-  width: 20px;
+  width: 19px;
 }
 .main-nav__toggle--open .main-nav__toggle-part {
   width: 100%;
-  &:first-child {
+  width: 0;
+  &::before {
     transform: rotate(45deg);
     width: 24px;
-    top: -1px;
+    top: -7px;
     left: 0px;
   }
-  &:nth-child(2) {
-    width: 0;
-    opacity: 0;
-  }
-  &:last-child {
+  &::after {
     transform: rotate(-45deg);
     width: 24px;
-    top: 16px;
+    top: 9.5px;
     left: 0px;
   }
 }
