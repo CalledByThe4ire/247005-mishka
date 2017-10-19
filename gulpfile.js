@@ -89,10 +89,6 @@ gulp.task("serve", function() {
   gulp.watch("*.html").on("change", server.reload);
 });
 
-gulp.task("build", function(done){
-  run("style", "minify-js", "sprite", "html", done);
-});
-
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",

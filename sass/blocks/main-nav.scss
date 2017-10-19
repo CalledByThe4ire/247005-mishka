@@ -92,7 +92,7 @@
     width: 100%;
     margin: 0 auto;
     transform: translateY(-450px);
-    transition: transform 1s;
+    transition: transform 0.5s;
     z-index: 1;
   }
   .main-nav--nojs .main-nav__dropdown {
@@ -104,7 +104,7 @@
   display: block;
   height: auto;
   transform: translateY(1px);
-  transition: transform 1s linear;
+  transition: transform 0.5s;
 }
 @media (min-width: $tablet-width) {
   .main-nav {
@@ -123,6 +123,11 @@
   }
 }
 @media (min-width: $desktop-width) {
+  .main-nav {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+  }
   .main-nav__dropdown {
     height: 100%;
   }

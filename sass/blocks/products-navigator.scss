@@ -50,7 +50,6 @@
     padding: 26px 35px 45px 35px;
     font-size: 20px;
     line-height: 30px;
-    // position: relative;
     &:hover {
       transform: translateY(-5px);
       transition: 0.2s;
@@ -69,7 +68,7 @@
     right: 0px;
     top: 2px;
   }
-  .products-navigator__buttons-toy-icon {
+  .products-navigator__button-toy-icon {
     right: 0px;
     top: 3px;
   }
@@ -81,6 +80,6 @@
   }
   .products-navigator__button {
     width: 455px;
-    padding: 26px 35px 45px 35px;
+    padding: 27px 35px 45px 35px;
   }
 }

@@ -17,24 +17,28 @@
     font-size: 17px;
     line-height: 18px;
     color: #d2d2d2;
+    opacity: 1;
 }
   &:-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #d2d2d2;
+    opacity: 1;
 }
   &::-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #d2d2d2;
+    opacity: 1;
 }
   &:-ms-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: #d2d2d2;
+    opacity: 1;
   }
 }
 @mixin tablet-placeholder {

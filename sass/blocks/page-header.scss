@@ -46,18 +46,22 @@
   }
 }
 @media (min-width: $desktop-width) {
+    .page-header {
+    height: 89px;
+  }
   .page-header__content {
     width: 1050px;
     padding: 0 50px 0 50px;
     justify-content: flex-end;
+    flex-wrap: wrap;
   }
   .page-header__logo {
-    position: absolute;
-    z-index: 10;
-    left: 50%;
-    margin-left: -77px;
-    padding-top: 8px;
+    margin: auto;
+    margin-bottom: -75px;
+    transform: translateY(8px);
+    margin-top: 0px;
     display: block;
+    width: 100%;
   }
   .page-header__logo-image {
     width: 154px;

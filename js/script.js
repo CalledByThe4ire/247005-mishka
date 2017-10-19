@@ -37,7 +37,7 @@ toggleBtn.onclick = toggleMenu;
 
 
 //Попап
-
+if(document.querySelector('.main-block__modal-btn')) {
 var link = document.querySelectorAll('.main-block__modal-btn');
 var popupContent = document.querySelector('.modal-dialog');
 var popupOverlay = document.querySelector('.modal-overlay');
@@ -62,6 +62,7 @@ window.addEventListener('keydown', function(event) {
     popupOverlay.classList.remove('modal-overlay--open');
   }
 });
+};
 
 
 // slider with add/remove style
