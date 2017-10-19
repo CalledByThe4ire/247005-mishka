@@ -34,10 +34,10 @@ gulp.task("style", function() {
 
 gulp.task("minify-js", function(cb) {
   pump([
-       gulp.src("js/*.js"),
-       uglify(),
-       rename("script.min.js"),
-       gulp.dest("build/js")
+        gulp.src("js/*.js"),
+        uglify(),
+        rename("script.min.js"),
+        gulp.dest("build/js")
     ],
     cb
   );
@@ -87,10 +87,6 @@ gulp.task("serve", function() {
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html", ["html"]);
   gulp.watch("*.html").on("change", server.reload);
-});
-
-gulp.task("build", function(done){
-  run("style", "minify-js", "sprite", "html", done);
 });
 
 gulp.task("copy", function() {

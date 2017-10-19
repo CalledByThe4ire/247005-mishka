@@ -8,11 +8,10 @@
   border: 1px solid #c7c7c7;
   box-shadow: 0 5px 10px rgba(0 , 1, 1, 0.25);
 }
-.modal-content {
+.modal-dialog__content {
   width: 260px;
   margin: 0 auto;
 }
-
 .modal-dialog__caption {
   font-size: 25px;
   line-height: 30px;
@@ -43,14 +42,13 @@
 .modal-dialog--open {
   display: block;
 }
-
 @media (min-width: $tablet-width) {
   .modal-dialog {
     width: 570px;
     left: 50%;
     transform: translateX(-50%)
   }
-  .modal-content {
+  .modal-dialog__content {
     width: 360px;
   }
   .modal-dialog__caption {

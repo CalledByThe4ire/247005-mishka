@@ -16,19 +16,17 @@
       <div class="page-header__content">
         <a class="page-header__logo">
           <picture>
-            <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
           </picture>
         </a>
         <nav class="main-nav main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-            <span class="main-nav__toggle--part"></span>
-            <span class="main-nav__toggle--part"></span>
-            <span class="main-nav__toggle--part"></span>
+            <span class="main-nav__toggle-part"></span>
           </button>
           <div class="main-nav__dropdown">
-            <ul class="main-nav__list--site-nav site-list">
+            <ul class="main-nav__list site-list site-list--site-nav">
               <li class="site-list__item">
                 <a class="site-list__item-link" href="catalog.html">Каталог товаров</a>
               </li>
@@ -42,16 +40,16 @@
                 <a class="site-list__item-link site-list__item-link--sale" href="#">Распродажа</a>
               </li>
             </ul>
-            <ul class="main-nav__list--service-nav site-list">
+            <ul class="main-nav__list site-list site-list--service-nav">
               <li class="site-list__item site-list__item--search">
                 <a class="site-list__item-link" href="#">
-                  <svg class="site-list__item--search-icon" width="20" height="19"><use xlink:href="#icon-search">
+                  <svg class="site-list__search-icon" width="20" height="19"><use xlink:href="#icon-search"/>
                   </svg>Поиск по&nbsp;сайту
                 </a>
               </li>
               <li class="site-list__item site-list__item--basket">
                 <a class="site-list__item-link" href="#">
-                  <svg class="site-list__item--basket-icon" width="21" height="18"><use xlink:href="#icon-cart">
+                  <svg class="site-list__basket-icon" width="21" height="18"><use xlink:href="#icon-cart"/>
                   </svg>Корзина: пока пуста
                 </a>
               </li>
@@ -65,19 +63,19 @@
       <h1 class="page-main__caption page-main__caption--bg">
         <span class="main-block__wrapper">Милые штуки ручной<br>работы для дома</span>
       </h1>
-      <section class="products-navigator wave-line--fill">
+      <section class="products-navigator wave-fill-line">
         <div class="products-navigator__wrapper">
           <a class="products-navigator__button" href="#">
             <span class="products-navigator__button-title">Предметы<br>интерьера
-              <svg class="products-navigator__button--int-icon" width="41" height="62">
-                <use xlink:href="#icon-interior">
+              <svg class="products-navigator__button-int-icon" width="41" height="62">
+                <use xlink:href="#icon-interior"/>
               </svg>
             </span>
           </a>
           <a class="products-navigator__button" href="#">
             <span class="products-navigator__button-title">Детские<br>игрушки
-              <svg class="products-navigator__button--toy-icon" width="61" height="61">
-                <use xlink:href="#icon-toy">
+              <svg class="products-navigator__button-toy-icon" width="61" height="61">
+                <use xlink:href="#icon-toy"/>
               </svg>
             </span>
           </a>
@@ -87,30 +85,32 @@
         <div class="main-block__wrapper week-product__wrapper wave-line__desktop">
           <h2 class="main-block__caption week-product__caption">Вязаные корзинки</h2>
           <b class="week-product__promo-name">Товар недели</b>
-          <dl class="week-product__characteristics characteristics-list">
+          <div class="week-product__product-info">
             <p class="week-product__product-description">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести
             расцветках, и&nbsp;трех размерах.</p>
-            <div class="characteristics-list__item">
-              <dt class="characteristics-list__item-param characteristics-list__item-param--type">Цвет:</dt>
-              <dd class="characteristics-list__item-param">&laquo;Тиффани&raquo;/cерый</dd>
-            </div>
-            <div class="characteristics-list__item">
-              <dt class="characteristics-list__item-param characteristics-list__item-param--type">Диаметр:</dt>
-              <dd class="characteristics-list__item-param">25&nbsp;см</dd>
-            </div>
-            <div class="characteristics-list__item">
-              <dt class="characteristics-list__item-param characteristics-list__item-param--type">Высота:</dt>
-              <dd class="characteristics-list__item-param">15&nbsp;см</dd>
-            </div>
-          </dl>
+            <dl class="week-product__characteristics characteristics-list">
+              <div class="characteristics-list__item">
+                <dt class="characteristics-list__item-param characteristics-list__item-param--type">Цвет:</dt>
+                <dd class="characteristics-list__item-param">&laquo;Тиффани&raquo;/cерый</dd>
+              </div>
+              <div class="characteristics-list__item">
+                <dt class="characteristics-list__item-param characteristics-list__item-param--type">Диаметр:</dt>
+                <dd class="characteristics-list__item-param">25&nbsp;см</dd>
+              </div>
+              <div class="characteristics-list__item">
+                <dt class="characteristics-list__item-param characteristics-list__item-param--type">Высота:</dt>
+                <dd class="characteristics-list__item-param">15&nbsp;см</dd>
+              </div>
+            </dl>
+          </div>
           <figure class="week-product__image-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1250px)"
+              <source type="image/webp" media="(min-width: 1150px)"
               srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
               srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-              <source media="(min-width: 1250px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
             </picture>
@@ -126,34 +126,34 @@
           <h2 class="main-block__caption about-us__caption">Коротко о&nbsp;нас:</h2>
           <ul class="about-us__list benefits-list">
             <li class="benefits-list__item">Экологически<br>чистые материалы
-              <svg class="benefits-list__item--icon-eco" width="32" height="38">
-                <use xlink:href="#icon-feature-flower">
+              <svg class="benefits-list__icon benefits-list__icon--eco" width="32" height="38">
+                <use xlink:href="#icon-feature-flower"/>
               </svg>
             </li>
             <li class="benefits-list__item">Скандинавский стиль по&nbsp;российской цене
-              <svg class="benefits-list__item--icon-price" width="47" height="27">
-                <use xlink:href="#icon-feature-money">
+              <svg class="benefits-list__icon benefits-list__icon--price" width="47" height="27">
+                <use xlink:href="#icon-feature-money"/>
               </svg>
             </li>
             <li class="benefits-list__item">Увеличивает лайки на&nbsp;фотографиях
-              <svg class="benefits-list__item--icon-like" width="34" height="27">
-                <use xlink:href="#icon-feature-heart">
+              <svg class="benefits-list__icon benefits-list__icon--like" width="34" height="27">
+                <use xlink:href="#icon-feature-heart"/>
               </svg>
             </li>
             <li class="benefits-list__item">Связано вручную с<br>любовью
             и&nbsp;умилением
-              <svg class="benefits-list__item--icon-hand" width="34" height="34">
-                <use xlink:href="#icon-feature-ball">
+              <svg class="benefits-list__icon benefits-list__icon--hand" width="34" height="34">
+                <use xlink:href="#icon-feature-ball"/>
               </svg>
             </li>
             <li class="benefits-list__item">Поддержка отечественного производителя
-              <svg class="benefits-list__item--icon-sup" width="55" height="23">
-                <use xlink:href="#icon-feature-rocket">
+              <svg class="benefits-list__icon benefits-list__icon--sup" width="55" height="23">
+                <use xlink:href="#icon-feature-rocket"/>
               </svg>
             </li>
             <li class="benefits-list__item">Поставляется в<br>подарочной упаковке
-              <svg class="benefits-list__item--icon-pack" width="33" height="32">
-                <use xlink:href="#icon-feature-gift">
+              <svg class="benefits-list__icon benefits-list__icon--pack" width="33" height="32">
+                <use xlink:href="#icon-feature-gift"/>
               </svg>
             </li>
           </ul>
@@ -181,13 +181,13 @@
             </blockquote>
           </div>
           <div class="reviews__pagination slider__toggles">
-            <button class="slider__toggle" type="button"
+            <button class="slider__toggle slider__toggle--prev" type="button"
             aria-label="Предыдущий отзыв">
-              <svg class="slider__toggle--prev" width="51" height="26"><use xlink:href="#icon-left-arrow"></svg>
+              <svg class="slider__toggle-icon-prev" width="51" height="26"><use xlink:href="#icon-left-arrow"/></svg>
             </button>
-            <button class="slider__toggle" type="button"
+            <button class="slider__toggle slider__toggle--next" type="button"
             aria-label="Следующий отзыв">
-              <svg class="slider__toggle--next" width="51" height="26"><use xlink:href="#icon-right-arrow"></svg>
+              <svg class="slider__toggle-icon-next" width="51" height="26"><use xlink:href="#icon-right-arrow"/></svg>
             </button>
           </div>
           <a class="reviews__make-review button" href="#">Написать</a>
@@ -196,13 +196,13 @@
       <section class="contacts">
         <div class="contacts__desktop-wrapper">
           <div class="main-block__wrapper contacts__wrapper">
-            <svg class="contacts__flag-icon" width="48" height="84"><use xlink:href="#icon-flag"></svg>
+            <svg class="contacts__flag-icon" width="48" height="84"><use xlink:href="#icon-flag"/></svg>
             <h2 class="main-block__caption contacts__caption">Контакты</h2>
             <dl class="contacts__details details-parts">
               <div class="details-parts__item">
                 <dt class="details-parts__type">e-mail:</dt>
                 <dd class="details-parts__content">
-                  <a class="details-parts__content--email"
+                  <a class="details-parts__email"
                   href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
                 </dd>
               </div>
@@ -221,30 +221,30 @@
     <footer class="page-footer">
       <div class="main-block__wrapper page-footer__wrapper">
         <a class="page-footer__logo">
-          <svg class="page-footer__logo--icon" width="102" height="34">
-            <use xlink:href="#icon-logo-footer">
+          <svg class="page-footer__logo-icon" width="102" height="34">
+            <use xlink:href="#icon-logo-footer"/>
           </svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в инстаграме">
-                <svg class="social__link--instagram" width="22" height="21">
-                  <use xlink:href="#icon-insta">
+                <svg class="social__link-icon" width="22" height="21">
+                  <use xlink:href="#icon-insta"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link" aria-label="Мы в фейсбуке">
-                <svg class="social__link--facebook" width="15" height="29">
-                  <use xlink:href="#icon-fb">
+                <svg class="social__link-icon" width="15" height="29">
+                  <use xlink:href="#icon-fb"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a href="#" class="social__link" arial-label="Мы в твитере">
-                <svg class="social__link--twitter" width="24" height="20">
-                  <use xlink:href="#icon-twitter">
+              <a href="#" class="social__link" aria-label="Мы в твитере">
+                <svg class="social__link-icon" width="24" height="20">
+                  <use xlink:href="#icon-twitter"/>
                 </svg>
               </a>
             </li>
@@ -254,14 +254,14 @@
           <p class="copyright__logo">Разработано</p>
           <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="HTML Academy">
             <svg class="copyright__logo-image" width="27" height="34">
-              <use xlink:href="#icon-htmlacademy">
+              <use xlink:href="#icon-htmlacademy"/>
             </svg>
           </a>
         </div>
       </div>
     </footer>
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-dialog__content">
         <h2 class="modal-dialog__caption">Добавить в&nbsp;корзину</h2>
         <span class="modal-dialog__size-choice">Выберите размер:</span>
         <div class="modal-dialog__size-list size-list">
@@ -273,6 +273,7 @@
       </div>
     </div>
     <div class="modal-overlay"></div>
+    <script src="js/picturefill.min.js" async defer></script>
     <script src="js/script.min.js" async defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHIFHg91wnChC8qGQtgjFXbhiu6fAV8K8&callback=initMap"
     async defer></script>

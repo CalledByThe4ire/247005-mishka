@@ -7,7 +7,6 @@
   padding: 0;
   margin-top: 30px;
 }
-
 .benefits-list__item {
   margin-bottom: 28px;
   padding-top: 55px;
@@ -16,33 +15,28 @@
     margin-bottom: 0;
   }
 }
-.benefits-list__item--icon-eco {
+.benefits-list__icon {
   @include benefits-icon;
+}
+.benefits-list__icon--eco {
   left: 7px;
 }
-.benefits-list__item--icon-price {
-  @include benefits-icon;
-}
-.benefits-list__item--icon-like {
-  @include benefits-icon;
+.benefits-list__icon--like {
   left: 7px;
   top: 5px;
 }
-.benefits-list__item--icon-hand {
-  @include benefits-icon;
+.benefits-list__icon--hand {
   top: 3px;
   left: 3px;
 }
-.benefits-list__item--icon-sup {
-  @include benefits-icon;
+.benefits-list__icon--sup {
   top: 4px;
   left: -3px;
+  overflow-x: hidden;
 }
-.benefits-list__item--icon-pack {
-  @include benefits-icon;
+.benefits-list__icon--pack {
   left: 3px;
 }
-
 @media(min-width: $tablet-width) {
   .benefits-list {
     display: flex;
@@ -74,22 +68,22 @@
   .benefits-list__item:nth-child(6) {
     order: 5;
   }
-  .benefits-list__item--icon-eco {
+  .benefits-list__icon--eco {
     left: 7px;
     top: 7px;
   }
-  .benefits-list__item--icon-price {
+  .benefits-list__icon--price {
     top: 10px;
   }
-  .benefits-list__item--icon-like {
+  .benefits-list__icon--like {
     left: 7px;
     top: 10px;
   }
-  .benefits-list__item--icon-hand {
+  .benefits-list__icon--hand {
     top: 10px;
     left: 3px;
   }
-  .benefits-list__item--icon-sup {
+  .benefits-list__icon--sup {
     top: 10px;
     left: -5px;
   }
@@ -98,7 +92,6 @@
     left: 3px;
   }
 }
-
 @media(min-width: $desktop-width) {
   .benefits-list {
     margin-left: 175px;

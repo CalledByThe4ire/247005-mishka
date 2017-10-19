@@ -12,44 +12,20 @@
     background-size: auto 8px;
   }
 }
-
 @media(min-width: $tablet-width) {
   .wave-line {
-  &::after {
-    height: 18px;
-    background-size: auto 18px;
-    bottom: -15px;
-    background-position: 50% 50%;
-  }
-}
-  .wave-line--fill {
-    position: relative;
     &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: -2px;
-      width: 100%;
-      height: 25px;
-      background-size: auto 25px;
-      background-image: url(../img/bg-zigzag-fill.svg);
-      background-position: 10% 50%;
+      height: 18px;
+      background-size: auto 18px;
+      bottom: -15px;
+      background-position: 50% 50%;
     }
   }
 }
-
 @media (min-width: $desktop-width) {
   .wave-line {
     &::after {
       display: none;
-    }
-  }
-  .wave-line--fill {
-    &::after {
-      bottom: -7px;
-      width: 100%;
-      height: 35px;
-      background-size: auto 35px;
     }
   }
   .wave-line__desktop {
@@ -57,6 +33,7 @@
       content: "";
       display: block;
       position: absolute;
+      left: 50px;
       bottom: -100px;
       width: 1050px;
       height: 25px;
@@ -67,7 +44,7 @@
   }
   .wave-line__desktop--slider {
     &::after {
-      bottom: -15px;
+      bottom: -65px;
     }
   }
 }
