@@ -7,10 +7,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .social__link-icon {
   &:hover {
     fill: $beaty-color;
   }
+
   &:active {
     fill: $beaty-color;
     fill-opacity: 0.6;

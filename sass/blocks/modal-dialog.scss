@@ -6,12 +6,14 @@
   width: 100%;
   background-color: #ffffff;
   border: 1px solid #c7c7c7;
-  box-shadow: 0 5px 10px rgba(0 , 1, 1, 0.25);
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
+
 .modal-dialog__content {
   width: 260px;
   margin: 0 auto;
 }
+
 .modal-dialog__caption {
   font-size: 25px;
   line-height: 30px;
@@ -21,6 +23,7 @@
   text-transform: uppercase;
   margin: 35px 0 20px 0;
 }
+
 .modal-dialog__size-choice {
   font-size: 15px;
   line-height: 30px;
@@ -29,36 +32,44 @@
   text-align: center;
   margin: 0;
 }
+
 .modal-dialog__add-btn {
   margin-bottom: 45px;
   background-color: $beaty-color;
   border: none;
   color: #ffffff;
   cursor: pointer;
+
   &:focus {
     outline: none;
   }
 }
+
 .modal-dialog--open {
   display: block;
 }
+
 @media (min-width: $tablet-width) {
   .modal-dialog {
     width: 570px;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
   }
+
   .modal-dialog__content {
     width: 360px;
   }
+
   .modal-dialog__caption {
     font-size: 30px;
     line-height: 57px;
   }
+
   .modal-dialog__size-choice {
     font-size: 17px;
     line-height: 30px;
   }
+
   .modal-dialog__add-btn {
     width: 360px;
   }

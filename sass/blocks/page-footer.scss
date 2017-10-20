@@ -1,43 +1,53 @@
 .page-footer {
   background-color: #f1f1f1;
 }
+
 .page-footer__social {
   border-bottom: 1px solid #e5e5e5;
   display: flex;
   padding: 25px 0 25px 0;
 }
+
 .page-footer__copyright {
   display: flex;
   margin: auto;
   padding: 18px 0 18px 0;
 }
+
 .page-footer__logo {
   display: none;
 }
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
   }
+
   .page-footer__logo {
     display: flex;
     margin: 0;
     padding-bottom: 12px;
   }
+
   .page-footer__logo-icon {
     margin: auto 0;
+
     &:hover {
       fill: $beaty-color;
     }
+
     &:active {
       fill: $beaty-color;
       fill-opacity: 0.6;
+    }
   }
-}
+
   .page-footer__social {
     border: none;
     margin-left: 79px;
   }
+
   .page-footer__copyright {
     margin: 0;
     padding: 55px 0;

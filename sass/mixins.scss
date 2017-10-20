@@ -4,13 +4,15 @@
   font-weight: bold;
   color: #000000;
 }
+
 @mixin lists-styles {
   background-color: #ffffff;
   padding: 0;
   list-style: none;
   margin: 0 auto;
-  text-align: center
+  text-align: center;
 }
+
 @mixin mobile-placeholder {
   &::-webkit-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -19,6 +21,7 @@
     color: #d2d2d2;
     opacity: 1;
   }
+
   &:-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
@@ -26,6 +29,7 @@
     color: #d2d2d2;
     opacity: 1;
   }
+
   &::-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
@@ -33,6 +37,7 @@
     color: #d2d2d2;
     opacity: 1;
   }
+
   &:-ms-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
@@ -41,6 +46,7 @@
     opacity: 1;
   }
 }
+
 @mixin tablet-placeholder {
   &::-webkit-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -48,18 +54,21 @@
     line-height: 18px;
     color: #d2d2d2;
   }
+
   &:-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 19px;
     line-height: 18px;
     color: #d2d2d2;
   }
+
   &::-moz-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 19px;
     line-height: 18px;
     color: #d2d2d2;
   }
+
   &:-ms-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 19px;
@@ -67,18 +76,21 @@
     color: #d2d2d2;
   }
 }
+
 @mixin mobile-inputs {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #444444;
 }
+
 @mixin tablet-inputs {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 19px;
   line-height: 18px;
   color: #444444;
 }
+
 @mixin visuallyhidden {
   position: absolute;
   width: 1px;
@@ -91,6 +103,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 @mixin benefits-icon {
   fill: $beaty-color;
   position: absolute;

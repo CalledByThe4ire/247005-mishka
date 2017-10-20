@@ -4,6 +4,7 @@
   flex-direction: column;
   width: auto;
 }
+
 .main-nav__toggle {
   position: absolute;
   top: -47px;
@@ -16,10 +17,13 @@
   transition: 0.5s ease-in-out;
   cursor: pointer;
   z-index: 10;
-  &:active, &:focus {
+
+  &:active,
+  &:focus {
     outline: none;
   }
 }
+
 .main-nav__toggle .main-nav__toggle-part {
   height: 2px;
   width: 100%;
@@ -31,8 +35,8 @@
   position: absolute;
   transform: rotate(0deg);
   top: 6px;
-  height: 2px;
   transform-origin: left center;
+
   &::before {
     content: "";
     height: 2px;
@@ -47,6 +51,7 @@
     top: -6px;
     transform-origin: left center;
   }
+
   &::after {
     content: "";
     height: 2px;
@@ -62,34 +67,35 @@
     transform-origin: left center;
   }
 }
+
 .main-nav__toggle--open {
   height: 21px;
   width: 19px;
 }
+
 .main-nav__toggle--open .main-nav__toggle-part {
-  width: 100%;
   width: 0;
+
   &::before {
     transform: rotate(45deg);
     width: 24px;
     top: -7px;
-    left: 0px;
+    left: 0;
   }
+
   &::after {
     transform: rotate(-45deg);
     width: 24px;
     top: 9.5px;
-    left: 0px;
+    left: 0;
   }
 }
-.main-nav__dropdown-show {
-  display: block;
-  height: auto;
-}
+
 @media (max-width: 767px) {
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+
   .main-nav__dropdown {
     position: absolute;
     width: 100%;
@@ -98,6 +104,7 @@
     transition: transform 0.5s;
     z-index: 1;
   }
+
   .main-nav--nojs .main-nav__dropdown {
     display: block;
     position: static;
@@ -105,34 +112,39 @@
     border-top: 1px solid #ececec;
   }
 }
+
 .main-nav__dropdown-show {
   display: block;
   height: auto;
   transform: translateY(1px);
   transition: transform 0.5s;
 }
+
 @media (min-width: $tablet-width) {
   .main-nav {
     flex-grow: 1;
   }
+
   .main-nav__toggle {
     display: none;
   }
+
   .main-nav__dropdown {
     display: flex;
     position: static;
     width: auto;
-    height: auto;
     padding: 0;
     height: 100%;
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-nav {
     flex-grow: 1;
     width: 100%;
     height: 100%;
   }
+
   .main-nav__dropdown {
     height: 100%;
   }

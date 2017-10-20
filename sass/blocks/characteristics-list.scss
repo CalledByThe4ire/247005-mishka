@@ -2,18 +2,20 @@
   display: flex;
   width: 260px;
   align-items: center;
-  height: auto;
   box-sizing: border-box;
   height: 40px;
   border-bottom: 1px solid #ececec;
 }
+
 .characteristics-list__item-param--type {
   width: 97px;
 }
+
 .characteristics-list__item-param {
   margin: 0;
 }
-@media(min-width: $tablet-width) {
+
+@media (min-width: $tablet-width) {
   .characteristics-list__item {
     width: 290px;
     padding: 7px 0 7px 0;

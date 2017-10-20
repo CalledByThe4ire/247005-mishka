@@ -9,16 +9,20 @@
   margin-bottom: 0;
   padding: 0;
 }
+
 .copyright__logo-image {
   fill: $beaty-color;
+
   &:hover {
     fill: #46c1ae;
   }
+
   &:active {
     fill: #46c1ae;
     fill-opacity: 0.3;
   }
 }
+
 @media (min-width: $tablet-width) {
   .copyright__logo {
     margin: 0 30px 0 0;

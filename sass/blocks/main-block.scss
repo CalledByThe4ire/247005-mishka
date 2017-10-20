@@ -8,12 +8,14 @@
   color: #444444;
   min-width: 320px;
 }
+
 .main-block__wrapper {
   display: block;
   width: 260px;
   padding: 0 30px 0 30px;
   margin: 0 auto;
 }
+
 .main-block__caption {
   font-size: 25px;
   color: #000000;
@@ -21,15 +23,18 @@
   font-weight: bold;
   margin: 0;
 }
+
 .main-block__promo {
   display: none;
 }
+
 @media (min-width: $tablet-width) {
   .main-block__wrapper {
     width: 668px;
     padding: 0 50px 0 50px;
     margin: 0 auto;
   }
+
   .main-block__promo {
     display: block;
     position: absolute;
@@ -37,21 +42,25 @@
     right: 0;
     z-index: 2;
   }
+
   .main-block__caption {
     font-size: 43px;
     line-height: 50px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-block__wrapper {
     width: 1050px;
     padding: 0 50px 0 50px;
     margin: 0 auto;
   }
+
   .main-block__promo {
     right: 50px;
     top: 107px;
   }
+
   .main-block__caption {
     font-size: 53px;
     line-height: 57px;

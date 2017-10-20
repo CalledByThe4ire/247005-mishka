@@ -3,16 +3,19 @@
   padding: 0;
   padding-top: 7px;
 }
-@media(min-width: $tablet-width) {
+
+@media (min-width: $tablet-width) {
   .about-us {
     margin-bottom: 30px;
     padding-top: 20px;
   }
 }
-@media(min-width: $desktop-width) {
+
+@media (min-width: $desktop-width) {
   .about-us {
     padding-top: 21px;
   }
+
   .about-us__caption {
     margin-left: 170px;
   }
